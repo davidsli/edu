@@ -1,0 +1,209 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin: 0px; padding: 0px; }
+fieldset, img { border: medium none; }
+ul, ol, li { list-style: outside none none; }
+select, input { vertical-align: middle; }
+select, input, textarea { font-size: 12px; margin: 0px; }
+body { color: rgb(104, 104, 104); padding: 5px 0px; font: 12px/20px "宋体"; background: rgb(247, 247, 247) url('pubclass2012_yan_rpx.png') repeat-x scroll 0px 0px; }
+.clearfix::after { content: "."; display: block; height: 0px; visibility: hidden; clear: both; }
+.clearfix {  }
+a { color: rgb(104, 104, 104); text-decoration: none; }
+a:visited { color: rgb(128, 144, 163); text-decoration: none; }
+a:hover, a:active, a:focus { color: rgb(6, 115, 165); text-decoration: underline; }
+.wrap { width: 950px; margin: 0px auto; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+.fred, .fred span, .fred a { color: rgb(199, 33, 0); }
+.fblue, .fblue a:link { color: rgb(0, 158, 248); }
+a.fblued, .fblued a:link { color: rgb(57, 102, 130); }
+.fbluel a:link { color: rgb(20, 82, 144); }
+.fred a:visited, .fgrey a:visited, .fblue a:visited, .fblued a:visited, a.fblued:visited, .fbluel a:visited { color: rgb(128, 144, 163); }
+.fred a:hover, .fgrey a:hover, .forg a:hover, .fblued a:hover, a.fblued:hover, .fblue a:hover, .fbluel a:hover { color: rgb(6, 115, 165); }
+.lf { float: left; }
+.rt { float: right; }
+.stext, .sbtn, .saveBtn, .b_txt, .sinaWb, .payAtt, .list01 li, .list02 li, .sub02_t span, .part03 .arr, .vNum, .btn04 { background: transparent url('pubclass2012_yan_icons.png') no-repeat scroll 999px 999px; }
+.tt, .sub01_t span, .best, .b2t { background: transparent url('pubclass2012_yan_tt.png') no-repeat scroll 999px 999px; outline: medium none; }
+.tit01, .sub02_c, .sub02_t, .part03, .blk03 { background: transparent url('pubclass2012_yan_rpx2.png') repeat-x scroll 0px 0px; }
+.b2t { background-position: -180px -340px; width: 118px; height: 31px; line-height: 999px; overflow: hidden; float: right; display: none; }
+.menu { overflow: hidden; }
+.menu_nav { position: relative; width: 950px; margin: 0px auto; }
+.menu_t { height: 42px; padding-top: 2px; }
+.menu_t li { float: left; height: 42px; margin: 0px 8px; display: inline; }
+.menu_t li .mt { display: block; height: 42px; text-indent: -999em; outline: medium none; background: transparent url('pubclass2012_yan_navtt.png') no-repeat scroll 0px 0px; }
+.menu_t #menu1 .mt { background-position: 0px -1px; width: 45px; }
+.menu_t #menu2 .mt { background-position: 0px -61px; width: 100px; }
+.menu_t #menu3 .mt { background-position: 0px -121px; width: 100px; }
+.menu_t #menu4 .mt { background-position: 0px -181px; width: 100px; }
+.menu_t #menu5 .mt { background-position: 0px -241px; width: 80px; }
+.menu_t #menu6 .mt { background-position: 0px -301px; width: 82px; }
+.menu_t #menu7 .mt { background-position: 0px -361px; width: 80px; }
+#menu1.selected .mt, .menu_t #menu1 .mt:hover { background-position: -120px 0px; }
+#menu2.selected .mt, .menu_t #menu2 .mt:hover { background-position: -120px -60px; }
+#menu3.selected .mt, .menu_t #menu3 .mt:hover { background-position: -120px -120px; }
+#menu4.selected .mt, .menu_t #menu4 .mt:hover { background-position: -120px -180px; }
+#menu5.selected .mt, .menu_t #menu5 .mt:hover { background-position: -120px -240px; }
+#menu6.selected .mt, .menu_t #menu6 .mt:hover { background-position: -120px -300px; }
+#menu7.selected .mt, .menu_t #menu7 .mt:hover { background-position: -120px -360px; }
+.menu_c .className { padding: 2px 20px 0px 50px; margin: 0px auto; width: 900px; line-height: 30px; }
+.menu_c a { padding: 0px 8px; white-space: nowrap; }
+.search { position: absolute; right: 0px; top: 6px; width: 210px; line-height: 22px; }
+.search .stext { background-position: 0px -200px; padding: 0px 5px 0px 20px; line-height: 22px; height: 22px; width: 120px; display: block; float: left; }
+.search .sinput { background: transparent none repeat scroll 0% 0%; line-height: 22px; height: 22px; width: 120px; color: rgb(153, 153, 153); font-size: 12px; border: medium none; }
+.search .sbtn { float: left; background-position: -153px -200px; width: 58px; height: 22px; border: medium none; }
+.part02 { overflow: hidden; margin-top: 10px; }
+.part02 .p_l { float: left; width: 320px; padding-right: 10px; }
+.part02 .p_m { float: left; width: 360px; }
+.part02 .p_r { float: right; width: 250px; }
+.part03 { background-position: 0px -360px; border: 1px solid rgb(228, 229, 229); height: 39px; line-height: 39px; position: relative; margin-top: 10px; text-align: center; }
+.part03 .arr { background-position: -200px -80px; height: 39px; width: 25px; position: absolute; top: 0px; left: 0px; }
+.part03 a { display: inline-block; padding: 0px 12px; color: rgb(0, 0, 0); }
+.part03 a img { background: transparent url('pubclass2012_yan_flag.png') no-repeat scroll 0px -90px; height: 20px; width: 20px; display: block; float: left; margin-top: 10px; }
+.part03 a .sina { background-position: 0px 0px; }
+.part03 a .ren { background-position: 0px -30px; }
+.part03 a .kai { background-position: 0px -59px; }
+.part03 a .wang { background-position: 0px -120px; }
+.part03 a .sohu { background-position: 0px -150px; }
+.part03 a .qq { background-position: 0px -180px; }
+.part04 { padding: 10px 20px; border: 1px solid rgb(233, 233, 233); background: rgb(255, 255, 255) none repeat scroll 0% 0%; margin-top: 10px; }
+.part05 { background: transparent url('pubclass2012_yan_wbbg.png') no-repeat scroll 0px 0px; height: 370px; margin-top: 10px; }
+.part05 .p_l { padding: 47px 10px 0px 13px; width: 475px; float: left; }
+.part05 .p_r { width: 434px; float: left; padding-top: 75px; }
+.part06 { overflow: hidden; margin-top: 10px; }
+.part06 .p_l { width: 690px; float: left; }
+.part06 .p_r { width: 250px; float: right; }
+.part07 { position: relative; margin-top: 10px; }
+.part07 .cont { border: 1px solid rgb(239, 239, 239); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding-top: 30px; }
+.tit01 { height: 30px; overflow: hidden; padding-top: 10px; }
+.tit01 h2 { float: left; }
+.tit01 .rt { float: right; padding-right: 5px; }
+.tit01 .tt { display: block; width: 145px; line-height: 999px; overflow: hidden; height: 40px; }
+.tit01 .onWb { background-position: 0px 0px; height: 25px; }
+.tit01 .teacher { background-position: 10px -285px; height: 25px; }
+.tit02 { height: 40px; }
+.tit02 h2 { width: 80px; float: left; height: 37px; line-height: 37px; border-bottom: 3px solid rgb(67, 155, 225); font-size: 24px; font-family: "黑体"; }
+.tit02 .rt { border-bottom: 3px solid rgb(234, 234, 234); height: 37px; width: 820px; font-size: 14px; line-height: 37px; overflow: hidden; padding-left: 8px; }
+.tit02 .more { padding-right: 10px; float: right; }
+.tit03 { height: 35px; overflow: hidden; font-size: 14px; padding: 0px 10px; outline: medium none; }
+.tit03 h2 { float: left; }
+.tit03 h2 .tt { width: 175px; height: 35px; display: block; line-height: 999px; overflow: hidden; }
+.tit03 h2 .tVote { background-position: 0px -240px; height: 20px; }
+.tit04 { margin-left: 30px; margin-bottom: -28px; position: relative; }
+.tit04 h2 .tt { width: 183px; height: 37px; line-height: 999px; display: block; overflow: hidden; }
+.tit04 h2 .mxztc { height: 35px; background-position: -180px -160px; }
+.tit04 h2 .hzjg { height: 35px; background-position: -180px -220px; }
+.pictxt { overflow: hidden; }
+.pictxt .pic { float: left; padding-right: 8px; }
+.pictxt .txt {  }
+.vido { float: left; position: relative; display: inline; padding: 10px 0px; width: 120px; overflow: hidden; }
+.vido img { display: block; background-color: rgb(255, 255, 255); }
+.vido .tit { line-height: 18px; padding-top: 10px; text-align: left; display: block; font-size: 13px; width: 120px; height: 39px; overflow: hidden; }
+.vido .intro { text-align: left; line-height: 18px; font-size: 13px; height: 18px; }
+.vido .intro i { color: rgb(255, 102, 0); font-style: normal; }
+.vido .pic { position: relative; height: 90px; width: 120px; }
+.pics .pic { float: left; }
+.pics .pic img { border: 1px solid rgb(231, 231, 231); }
+.pics .pic span { display: block; text-align: center; padding-top: 5px; }
+.pics .pic a:hover span { text-decoration: none; }
+.blk_login { padding: 5px 10px 0px 0px; line-height: 30px; height: 30px; }
+.blk_login .saveBtn { background-position: 0px 8px; display: block; width: 130px; height: 28px; overflow: hidden; float: left; padding-left: 10px; }
+.blk01 { border: 1px solid rgb(233, 233, 233); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 0px 10px; height: 320px; }
+.blk01 .gkkwb { clear: both; text-align: center; padding: 27px; }
+.blk02 { padding: 20px 0px; margin-right: -35px; overflow: hidden; }
+.blk02 .vido { margin-right: 35px; height: 175px; }
+.blk03 { overflow: hidden; background-position: 0px -420px; height: 98px; }
+.blk03 .voteTxt { padding: 15px; width: 200px; overflow: hidden; float: left; }
+.blk03 .vote { width: 72px; height: 67px; float: left; padding-right: 8px; }
+.blk03 .vNum { background-position: 0px -80px; height: 37px; line-height: 37px; text-align: center; width: 72px; font-family: Arial; font-size: 18px; color: rgb(255, 255, 255); }
+.blk03 .btn04 { width: 72px; line-height: 26px; margin-top: 5px; text-align: center; font-size: 14px; color: rgb(255, 255, 255); height: 26px; background-position: 0px -120px; display: block; }
+.blk03 a.btn04:hover { opacity: 0.8; text-decoration: none; color: rgb(255, 255, 255); }
+.blk03 .txt h3 { font-size: 14px; padding-bottom: 5px; }
+.blk03 .txt .fblue { float: right; }
+.blk04 { background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(227, 227, 227); padding: 0px 10px; height: 327px; }
+.blk04 .pictxt { padding-top: 26px; }
+.blk05, .blk06 { padding: 10px 0px 0px 32px; }
+.blk05 a { float: left; margin: 5px 19px 0px 0px; text-align: center; }
+.blk05 .pic { margin-right: 37px; padding: 0px 0px 5px; width: 90px; height: 110px; overflow: hidden; }
+.blk06 .pic { padding: 0px 10px 10px; }
+.blk07 { width: 470px; overflow: hidden; height: 250px; }
+.sub01 { border: 1px solid rgb(233, 233, 233); background: rgb(255, 255, 255) none repeat scroll 0% 0%; height: 320px; }
+.sub01_t { height: 38px; overflow: hidden; }
+.sub01_t span { display: block; float: left; height: 38px; }
+.sub01_t #sub01_t1 { width: 171px; background-position: 0px -100px; }
+.sub01_t #sub01_t2 { width: 187px; background-position: -172px -40px; }
+.sub01_t #sub01_t1.selected { background-position: 0px -40px; }
+.sub02 { border: 1px solid rgb(233, 233, 233); background: rgb(255, 255, 255) none repeat scroll 0% 0%; height: 320px; }
+.sub02_c { height: 282px; background-position: 0px -57px; }
+.sub02_t { height: 38px; }
+.sub02_t h2 { float: left; width: 150px; padding: 10px 0px 0px 5px; }
+.sub02_t .best { display: block; width: 150px; height: 20px; background-position: 0px -160px; line-height: 999px; overflow: hidden; }
+.sub02_t span { display: block; margin-top: 15px; width: 24px; height: 22px; color: rgb(107, 107, 107); text-align: center; float: left; background-position: 0px -160px; padding-right: 3px; cursor: pointer; }
+.sub02_t span.selected { color: rgb(206, 23, 20); background-position: -27px -160px; }
+.list01 { padding: 10px 10px 0px 15px; }
+.list01 li { background-position: -220px -35px; padding-left: 10px; height: 29px; line-height: 29px; font-size: 14px; overflow: hidden; }
+.list02 { padding: 10px; }
+.list02 li { background-position: -200px -154px; line-height: 29px; height: 29px; }
+.list02 li em { padding: 0px 15px 0px 5px; font-style: normal; color: rgb(123, 121, 121); }
+.list02 li .data { display: block; margin-top: -29px; text-align: right; height: 29px; color: rgb(236, 0, 0); }
+.focus { overflow: hidden; min-width: 950px; background: transparent url('video_0921_bg.png') repeat-x scroll 0% 0%; }
+.focus_body { background: transparent url('video_0921_05.png') no-repeat scroll center top; }
+.scroll { width: 950px; margin: 0px auto; position: relative; padding-top: 16px; }
+.scroll .t, .arr_left, .arr_right, .scroll_txt { position: absolute; }
+.arr_left { width: 45px; height: 70px; cursor: pointer; line-height: 400px; overflow: hidden; left: 0px; top: 135px; background: transparent url('video_0921_arrow_left.png') no-repeat scroll 0% 0%; }
+.arr_right { width: 45px; height: 70px; cursor: pointer; line-height: 400px; overflow: hidden; right: 0px; top: 135px; background: transparent url('video_0921_arrow_right.png') no-repeat scroll 0% 0%; }
+.scroll .box { float: left; width: 944px; }
+.scroll_cont { border: 3px solid rgb(255, 255, 255); width: 944px; height: 342px; }
+.numList { vertical-align: middle; text-align: center; padding: 8px; }
+.numList span { display: inline-block; width: 25px; height: 0px; padding-top: 8px; border: 1px solid rgb(94, 94, 94); margin-right: 5px; background: rgb(15, 15, 15) none repeat scroll 0% 0%; cursor: pointer; line-height: 0; font-size: 0px; }
+.numList span.selected { border: 1px solid rgb(51, 51, 51); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.scroll_txt { left: 660px; top: 11px; }
+.scroll_txt .txtbg { position: absolute; width: 257px; height: 390px; left: 0px; top: 0px; background: transparent url('video_0921_txtbg.png') no-repeat scroll 0% 0%; }
+.scroll_txt .txtcontent { position: absolute; left: 34px; top: 60px; color: rgb(255, 255, 255); width: 210px; }
+.scroll_txt .txtcontent h2 { font-size: 20px; color: rgb(204, 204, 204); font-family: 黑体; line-height: 24px; padding: 0px 0px 5px; }
+.scroll_txt .txtcontent p { padding: 5px 0px; }
+.scroll_txt .txtcontent .btn { text-align: center; padding: 10px; }
+.scroll_txt .txtcontent .btn a { background: transparent url('video_0921_02.png') no-repeat scroll 0px -250px; width: 94px; height: 25px; display: block; margin: 0px auto; cursor: pointer; line-height: 400px; overflow: hidden; }
+.txtcontent h2 a { color: rgb(255, 255, 255); }
+.txtcontent h2 a:hover { color: rgb(255, 255, 255); text-decoration: none; }
+.txtcontent a { color: rgb(255, 255, 255); }
+.footer { color: rgb(104, 104, 104); line-height: 22px; margin: 2em 0px; text-align: center; font-family: Arial,Helvetica,sans-serif,"黑体"; }
+.secondaryHeader { height: 33px; overflow: hidden; color: rgb(0, 0, 0); font-size: 12px; font-weight: 100; padding-bottom: 2px; width: 950px; margin: 0px auto; }
+.secondaryHeader a, .secondaryHeader a:visited { color: rgb(0, 0, 0); text-decoration: none; }
+.secondaryHeader a:hover, .secondaryHeader a:active { color: rgb(204, 0, 0); text-decoration: underline; }
+.sHBorder { padding: 0px 10px 0px 12px; overflow: hidden; }
+.sHLogo { float: left; height: 31px; line-height: 31px; overflow: hidden; }
+.sHLogo span, .sHLogo span a { display: table-cell; vertical-align: middle; height: 31px; }
+.sHLogo span, .sHLogo span a img { vertical-align: middle; }
+.sHLinks { float: right; line-height: 31px; font-family: "Microsoft YaHei","微软雅黑","SimSun","宋体","Arial Narrow"; }
+.pictxt .pic { float: left; padding-right: 8px; }
+.pictxt img { display: block; }
+.pictxt .pic a img { text-decoration: none; }
+.blk_wb { padding-top: 14px; }
+.slide02 { height: 260px; overflow: hidden; margin-top: 10px; position: relative; }
+.slide02 .wbCont { height: 130px; width: 297px; overflow: hidden; }
+.slide02 .pictxt { padding: 5px 0px; overflow: hidden; }
+.slide02 .pic { float: left; padding-right: 0px; padding-top: 5px; }
+.slide02 .txt { background-position: 0px -280px; padding: 10px 10px 10px 15px; width: 222px; float: left; height: 60px; position: relative; }
+.slide02 .txt p { right: 5px; position: absolute; bottom: 5px; }
+.weibo_selected { float: left; width: 300px; }
+.pictxt .pic { float: left; padding-right: 8px; }
+.pictxt img { display: block; }
+.pictxt .pic a img { text-decoration: none; }
+.blk_wb { padding-top: 14px; }
+.slide02 { height: 180px; overflow: hidden; margin-top: 10px; position: relative; }
+.slide02 .wbCont { height: 90px; width: 297px; overflow: hidden; }
+.slide02 .pictxt { padding: 5px 0px; overflow: hidden; }
+.slide02 .pic { float: left; padding-right: 0px; padding-top: 5px; }
+.slide02 .txt { background-position: 0px -280px; padding: 10px 10px 10px 15px; width: 222px; float: left; height: 60px; position: relative; }
+.slide02 .txt p { right: 5px; position: absolute; bottom: 5px; }
+.wbCont .txt { background: transparent url('gk_yan_main_.png') no-repeat scroll 0px -280px; }
+.blk02 { border-top: 0px none; padding: 25px 0px; }
+.blk02 .zcbox2 { width: 129px; margin-right: 25px; }
+.zcbox2 { float: left; text-align: center; }
+.zcbox2 .zcimg { display: block; margin: 0px auto; }
+.zcbox2 a span { font-size: 13px; display: block; padding-top: 8px; color: rgb(6, 115, 165); text-align: left; }
+.side-btns-2wm { width: 110px; top: 350px; left: 50%; margin: 0px 0px 0px 480px; position: fixed; z-index: 100; overflow: hidden; font: 12px/22px Arial; color: rgb(51, 51, 51); }
+.side-btns-2wm em, .side-btns-2wm span { font-style: normal; font-weight: normal; line-height: 27px; }
+.side-btns-2wm-img { display: block; width: 110px; background: rgb(235, 235, 235) none repeat scroll 0% 0%; line-height: 0; text-align: center; position: relative; }
+.side-btns-2wm-img:link, .side-btns-2wm-img:visited { color: rgb(51, 51, 51); text-decoration: none; }
+.side-btns-2wm-img:hover, .side-btns-2wm-img:active { color: rgb(51, 51, 51); text-decoration: none; background: rgb(209, 209, 209) none repeat scroll 0% 0%; }
+.side-btns-2wm img { border: 0px none; display: block; margin: 0px auto; padding: 0px; }
+.side-btns-2wm-close { width: 40px; height: 18px; line-height: 80px; margin: 0px 0px 0px 70px; display: block; overflow: hidden; background: transparent url('close.png') no-repeat scroll 0% 0%; }
+.real-time-window { z-index: 60000; display: block; height: 46px; line-height: 46px; overflow: hidden; font-family: "Microsoft YaHei","微软雅黑","SimHei","黑体" ! important; }

@@ -1,0 +1,101 @@
+<meta charset="UTF-8">
+
+<div class="md-content">
+	<div class="modal-header">
+		<h4 class="modal-title">
+			<strong id="addItemStoneTitle">添加课程</strong>
+		</h4>
+	</div>
+	<div class="modal-body">
+		<form role="form" id="addCourse" action="" class="form-horizontal" method="post">
+
+			<div class="form-group">
+				<label for="upclientpersonname" class="col-lg-3 control-label"><span>*</span>课程名称：</label>
+				<div class="col-lg-6">
+					<input type="text" required class="form-control"
+						name="courseName" id="courseName" placeholder="输入课程名"
+						title="" maxlength="99">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group form-group-select2">
+				<label for="taskName" class="col-lg-3 control-label"> 
+				<span>*</span>课程介绍：
+				</label>
+				<div class="col-lg-6">
+				  <textarea name="courIntro" id="courIntro" maxlength="399" multiple style="width:530px;" required title="请添加项目成员！">
+				</textarea>
+				</div>
+				<span class="info"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="upemail" class="col-lg-3 control-label"> <span>*</span>讲师名：
+				</label>
+				<div class="col-lg-6">
+					<input type="text" required class="form-control" name="teacherName"
+						id="teacherName" maxlength="50" placeholder="输入讲师名" title="请输入用户邮箱！">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group form-group-select2">
+				<label for="taskName" class="col-lg-3 control-label"> 
+				<span>*</span>讲师介绍：
+				</label>
+				<div class="col-lg-6">
+				  <textarea name="teacherIntro" id="teacherIntro" maxlength="400" multiple style="width:530px;" required title="请添加项目成员！">
+				</textarea>
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group">
+				<label for="upemail" class="col-lg-3 control-label"> <span>*</span>学校：
+				</label>
+				<div class="col-lg-6">
+					<input type="text" required class="form-control" name="school"
+						id="school" maxlength="50" placeholder="输入学校" title="请输入用户邮箱！">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group">
+				<label for="memberRole" class="col-lg-3 control-label"> <span>*</span>所属学科：</label>
+				<div class="col-lg-6">
+					<select class="form-control" name="subject" id="subject">
+					  <#list subList as ls>
+						<option value='${ls.id}'>${ls.subName}</option>
+					  </#list>
+					</select>
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group">
+				<label for="memberRole" class="col-lg-3 control-label"> <span>*</span>课程图片：
+				</label>
+				<div class="col-lg-6">
+					<input type="file" required class="form-control" name="courseimgUrl"
+						id="courseimgUrl" placeholder="输入学校" title="请输入用户邮箱！">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="button" onclick="submitCourse1()">提交</button>
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="course/js/addCourse.js"></script>
+<!-- <script src="js/jquery-1.4.2.min.js"></script> -->
+
+
+
+
+
+

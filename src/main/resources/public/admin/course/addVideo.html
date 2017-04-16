@@ -1,0 +1,80 @@
+<meta charset="UTF-8">
+
+<div class="md-content">
+	<div class="modal-header">
+		<h4 class="modal-title">
+			<strong id="addItemStoneTitle">添加视频</strong>
+		</h4>
+	</div>
+	<div class="modal-body">
+		<form role="form" id="addCourse" class="form-horizontal" enctype="multipart/form-data">
+
+			<div class="form-group">
+				<label for="upclientpersonname" class="col-lg-3 control-label"><span>*</span>视频名称：</label>
+				<div class="col-lg-6">
+					<input type="text" required class="form-control"
+						name="videoName" id="videoName" placeholder="输入视频名"
+						title="" maxlength="99">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group">
+				<label for="upemail" class="col-lg-3 control-label"> <span>*</span>章节：
+				</label>
+				<div class="col-lg-6">
+					<input type="text" required class="form-control" name="chapter"
+						id="chapter" maxlength="50" placeholder="输入第几集" title="请输入用户邮箱！">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group">
+				<label for="memberRole" class="col-lg-3 control-label"> <span>*</span>所属课程：</label>
+				<div class="col-lg-6">
+					<select class="form-control" name="course" id="course">
+					  <#list courseList as ls>
+						<option value='${ls.id}'>${ls.courName}</option>
+					  </#list>
+					</select>
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group">
+				<label for="memberRole" class="col-lg-3 control-label"> <span>*</span>视频缩略图：
+				</label>
+				<div class="col-lg-6">
+					<input type="file" required class="form-control" name="thumb"
+						id="thumb" placeholder="输入学校" title="请输入用户邮箱！">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group">
+				<label for="memberRole" class="col-lg-3 control-label"> <span>*</span>视频文件：
+				</label>
+				<div class="col-lg-6">
+					<input type="file" required class="form-control" name="video"
+						id="video" placeholder="输入视频文件" title="请提交视频文件">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="modal-footer">
+				<button type="button" onclick="SubmitVideo()">提交</button>
+			</div>
+		</form>
+	</div>
+	
+	
+</div>
+
+<script type="text/javascript" src="course/js/Muajaxfileupload.js"></script>
+<script type="text/javascript" src="course/js/addVideo.js"></script>
+<!-- <script src="js/jquery-1.4.2.min.js"></script> -->
+
+
+
+
+
