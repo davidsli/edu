@@ -39,5 +39,5 @@ public class Application extends SpringBootServletInitializer {
 		factory.setMaxRequestSize("2048MB");
 		return factory.createMultipartConfig();
 	}
-	
+    
 }

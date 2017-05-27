@@ -60,6 +60,11 @@ public class User implements java.io.Serializable {
 		this.state = state;
 	}
 
+	public User(String email, String userPassword) {
+		this.email=email;
+		this.userPassword=userPassword;
+	}
+
 	@Id
 	@GeneratedValue(generator = "system-uuid")
 	@GenericGenerator(name = "system-uuid", strategy = "uuid")

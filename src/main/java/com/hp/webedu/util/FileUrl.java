@@ -3,6 +3,11 @@ package com.hp.webedu.util;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * 读取静态资源文件的类
+ * @author pan.he
+ *
+ */
 public class FileUrl {
 	//让它实现单例状态
 		private static Properties pro=new Properties();

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/messages_zh.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<title>登录/注册</title>
+	<style type="text/css">
+	.loginOrReg {
+		margin-top: 60px;
+	}
+    .loginOrReg .input-group {
+    	margin-top: 12px;
+    }
+    .loginOrReg .input-group-addon {
+    	background-color: transparent;
+    }
+    .loginOrReg .glyphicon {
+    	color: #000;
+    }
+    .error {
+    	color: #f00;
+    	font-size: 10px;
+    	font-weight: 100;
+    }
+   .btn-warning {
+   		width: 100%;
+   		margin-top: 12px;
+   		height: 35px;
+   	} 
+   	.check {
+   		padding-left: 45px;
+    	font-size: 12px;
+    	font-weight: 100;
+   	}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$.validator.setDefaults({  
+			errorPlacement : function(error, element) {
+			    element.parent().after(error.css({"display":"block","paddingLeft":"43px"})) ; 
+			}   
+		});  
+
+		$('#loginForm').validate({
+			rules:{
+				email:{
+					required: true	
+				},
+				password: {
+					required: true,
+					minlength: 6,
+					maxlength: 12
+				}
+			}
+		});
+		$('#regForm').validate({
+			rules:{
+				email:{
+					required: true	
+				},
+				password: {
+					required: true,
+					minlength: 6,
+					maxlength: 12
+				},
+				confirm_password: {
+					required: true,
+					minlength: 6,
+					maxlength: 12,
+					equalTo: "#password"
+				}
+			}
+		});
+		});
+	</script>
+</head>
+
+<body class="container">
+<div class="loginOrReg col-sm-offset-4 col-sm-4">
+		
+					<ul id="myTab" class="nav nav-tabs">
+					    <li class="active"><a href="#loginTab" data-toggle="tab">用户登录</a></li>
+					    <li><a href="#regTab" data-toggle="tab">注册新用户</a></li>
+					</ul>
+				
+			
+					<div id="myTabContent" class="tab-content">
+					    <div class="tab-pane fade in active" id="loginTab">
+					        <form id="loginForm" action="" method="post" role="form">
+								<div class="input-group">	
+									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+									<input type="text" id="email" name="nickname" class="form-control" placeholder="请输入邮箱">
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									<input class="form-control" id="password" name="loginpassword" type="password" placeholder="请输入密码">
+								</div>
+								<div class="check">
+									<input id="remember-me" type="checkbox">记住我<a href="/edu/home/forgetpswUI" class="pull-right" id="forget-psw">忘记密码</a>
+								</div>
+								<input onclick="submitUser()" class="btn btn-default btn-warning" class="loginButton" value="LOG IN">
+							</form>
+					    </div>
+					    <div class="tab-pane fade" id="regTab">
+					        <form id="regForm" action="" method="post" role="form">
+								<div class="input-group">	
+									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+									<input type="email" id="email" name="email" class="form-control" placeholder="请输入邮箱">
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									<input type="password" id="password" name="password" class="form-control" placeholder="请输入密码">
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									<input type="password" id="password1" name="password" class="form-control" placeholder="请再次输入密码">
+								</div>
+								<div class="check">
+									<input type="checkbox" id="accept-terms">我已阅读并同意 <a href="#">用户协议</a>
+								</div>
+								
+								<input class="btn btn-default btn-warning" class="loginButton" value="Register" onclick="regUser()">
+							</form>
+					    </div>
+					</div>
+								
+			
+		
+	</div>
+	<!-- <div class="modal fade" id="loginOrReg" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<ul class="switch">
+							<li><a href="#">用户登录</a></li>
+							<li><a href="#" style="color: #9d9d9d;">注册新用户</a></li>
+						</ul>
+					</div>
+					<div class="modal-body">
+						<form id="loginForm" action="" method="post" role="form">
+							<div class="input-group">	
+								<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+								<input type="email" id="email" name="email" class="form-control" placeholder="请输入邮箱">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								<input class="form-control" id="password" name="password" type="password" placeholder="请输入密码">
+							</div>
+							<div class="check">
+								<input id="remember-me" type="checkbox" checked="checked">记住我<a href="#" class="pull-right" id="forget-psw">忘记密码</a>
+							</div>
+							<input class="btn btn-default btn-info" id="loginButton" value="LOG IN" type="submit">
+						</form>
+
+						<form id="regForm" action="" method="post" role="form" style="display:none;">
+							<div class="input-group">	
+								<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+								<input type="email" id="email" name="email" class="form-control" placeholder="请输入邮箱">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								<input type="password" id="password" name="password" class="form-control" placeholder="请输入密码">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								<input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="请再次输入密码">
+							</div>
+							<div class="check">
+								<input type="checkbox" id="accept-terms" checked="checked">我已阅读并同意 <a href="#">用户协议</a>
+							</div>
+							
+							<input class="btn btn-default btn-info" id="loginButton" value="Register" type="submit">
+						</form>
+					</div>
+					
+				</div>
+			</div>
+	</div> -->
+</body>
+
+<script type="text/javascript" src="login/js/loginOrReg.js"></script>
+</html>

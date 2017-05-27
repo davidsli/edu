@@ -1,0 +1,268 @@
+	body {
+			background-color: #f3f5f7;
+		}
+	body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+		font-family: "Microsoft YaHei", 微软雅黑, "宋体", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+	}
+	.navbar-brand {
+		font-size: 18px;
+	}
+	.glyphicon:before {
+		padding-right: 5px;
+	}
+	.navbar {
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+	.col-sm-3 .row {
+		height: 170px;
+	}
+	video {
+	    width: 100%;
+	    height: auto;
+	    max-height: 100%;
+	}
+	#content-video {
+		background-color: #fff;
+		border: 1px solid #ccc;
+	}
+	
+	.click-collect {
+		padding-left: 15px;
+		margin-top: 60px;
+	}
+	.glyphicon-thumbs-up, .glyphicon-heart-empty, .glyphicon-heart {
+		font-size: 16px;
+		cursor: pointer;
+	}
+	.row-brand {
+		font-size: 16px;
+		color: #000080;
+		font-weight: 600;
+	}
+	.course-title {
+		font-size: 16px;
+		padding-left: 15px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		color: #191970;
+	}
+	.teacher-intr .teach-school {
+		list-style: none;
+		display: inline-block;
+		padding-left: 10px;
+		color: #191970;
+	}
+	.intro {
+		padding: 6px 15px; 
+	}
+	.btn-primary {
+		position: absolute;
+		left: 80px;
+		bottom: 12px;
+	}
+	#course-total, #comment {
+		background-color: #fff;
+		margin-top: 12px;
+		border: 1px solid #ccc;
+	}
+	.list-title {
+		font-size: 16px;
+		font-weight: 600;
+		color: #191970;
+		padding-left: 12px;
+		line-height: 32px;
+	}
+	hr {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.course-list {
+		height: 115px;
+		padding-left: 0;
+		overflow-y: scroll;
+	}
+	.course-list > li {
+		list-style: none;
+		display: inline-block;
+	}
+	.course-list-single {
+		padding-left: 12px;
+		padding-top: 8px;
+	}
+	.course-list-single li {
+		list-style: none;
+	}
+	.course-list-single li:last-child {
+		text-align: center; 
+	}
+	.img-thumbnail {
+		width: 115px;
+		height: 90px;
+	}
+	#textarea {
+		height: 54px;
+		width: 100%;
+	}
+	#comment {
+		padding: 15px 15px;
+	}
+	.comment-list {
+		padding: 12px 0;
+	}
+	 /*#comment-div > div:nth-child(even) {
+		background-color: #efefef;
+	}*/
+	.comment-list {
+		border-bottom: 1.5px dotted #dfdfdf;
+	}
+	.comment-list a {
+		text-decoration: none;
+	}
+	.comment-list:hover {
+		background-color: #eee;
+	}
+	.list-pic {
+		float: left;
+	}
+	.list-pic img {
+		width: 30px;
+		height: 30px;
+		margin-right: 8px;
+	}
+	.divider {
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	.footer nav{
+		padding-left: 28%;
+		border: none;
+		margin-bottom: 0;
+	}
+	
+
+	/*.video-container 
+	{
+	    position:absolute;
+	    height:100%;
+	    width:100%;
+	    overflow: hidden;
+	}
+
+	.video-container video 
+	{
+	    min-width: 100%;
+	    min-height: 100%;
+	}*/
+
+	@media (max-width: 767px) {
+	    
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		.navbar-brand {
+			font-size: 16px;
+		}		
+		.nav > li > a {
+			padding-left: 0;
+			font-size: 13px;
+		}
+		.col-sm-3 .row {
+			height: 133px;
+		}
+		.course-title {
+			font-size: 14px;
+		}
+		.row-brand {
+			font-size: 13px;
+		}
+		.intro {
+			font-size: 12px;
+		}
+		.teacher-intr img {
+			width: 49px;
+			height: 55px;
+		}
+		.list-title {
+			font-size: 14px;
+			line-height: 28px;
+		}
+		.course-list {
+			height: 100px;
+		}
+		.img-thumbnail {
+			width: 89px;
+			height: 70px;
+		}
+		#course-total hr {
+			margin-top: 0;
+			margin-bottom: 0;
+		}			
+		hr {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.btn-primary {
+			font-size: 10px;
+			left: 59px;
+			bottom: 2px;
+		}
+		#textarea {
+			height: 42px;
+		}
+		#comment {
+			font-size: 12px;
+			padding: 10px 10px;
+		}
+		.comment-list {
+			padding: 8px 0;
+		}
+		.list-pic img {
+			width: 25px;
+			height: 25px;
+		}
+	}	
+	@media (min-width: 1200px) {
+		.navbar-brand {
+			font-size: 20px;
+		}
+		.course-title {
+			font-size: 18px;
+		}
+		.row-brand {
+			font-size: 17px;
+		}
+		.intro {
+			font-size: 15px;
+		}
+		.col-sm-3 .row {
+			height: 212px;
+		}
+		.btn-primary {
+			left: 107px;
+			bottom: 12px;
+		}
+		.nav > li > a {
+			font-size: 15px;
+		}
+		.list-title {
+			font-size: 16px;
+			line-height: 36px;
+		}
+		.course-list {
+			height: 140px;
+		}
+		.img-thumbnail {
+			width: 140px;
+			height: 110px;
+		}
+		#textarea {
+			height: 64px;
+		}
+		.comment {
+			font-size: 16px;
+			padding: 18px 18px;
+		}
+		.comment-list {
+			padding: 16px 0;
+		}
+	}

@@ -2,6 +2,7 @@ package com.hp.webedu.admincomtroller;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -31,11 +32,11 @@ import com.hp.webedu.service.CourseService;
 import com.hp.webedu.service.VideoService;
 import com.hp.webedu.util.FileUrl;
 
-import it.sauronsoftware.jave.Encoder;
-import it.sauronsoftware.jave.EncoderException;
-import it.sauronsoftware.jave.FFMPEGLocator;
-import it.sauronsoftware.jave.InputFormatException;
-import it.sauronsoftware.jave.MultimediaInfo;  
+//import it.sauronsoftware.jave.Encoder;
+//import it.sauronsoftware.jave.EncoderException;
+//import it.sauronsoftware.jave.FFMPEGLocator;
+//import it.sauronsoftware.jave.InputFormatException;
+//import it.sauronsoftware.jave.MultimediaInfo;  
 
 
 @Controller
@@ -47,6 +48,18 @@ public class VideoManageController {
 	
 	@Resource
 	private CourseService courseService;
+	
+	//删除评论
+	@ResponseBody
+	@RequestMapping("/delete")
+	public String deleteCourse(String id) throws SQLException
+	{
+		JSONObject json=new JSONObject();
+		int i=videoService.deleteVideo(id);
+		json.put("success", true);
+		return json.toJSONString();
+	}
+			
 	
 	/**
 	 * 上传视频文件处理的类
@@ -60,8 +73,8 @@ public class VideoManageController {
 	 * @throws InputFormatException 
 	 */
 	@RequestMapping("/add")
-	public String add(String videoName,String chapter,String course,
-			@RequestParam("thumb") MultipartFile thumb,@RequestParam("video") MultipartFile video) throws InputFormatException, EncoderException
+	public @ResponseBody String add(String videoName,String chapter,String course,
+			@RequestParam("thumb") MultipartFile thumb,@RequestParam("video") MultipartFile video) 
 	{
 		
 		String fileName1 = thumb.getOriginalFilename();
@@ -94,14 +107,15 @@ public class VideoManageController {
 			
 			
 			Course cour=courseService.getCourseById(course);
-			String timeLong="300分钟";
+			Double random = Math.random()%5.5;
+			String timeLong=random.toString()+"分钟";
 			videoService.saveVideo(new Video(cour,videoName,fileName22,timeLong,chapter,fileName,videoSize.toString()));
 			json.put("success", true);
 		} catch (IOException e) {
 			json.put("success", false);
 			e.printStackTrace();
 		}
-		return "admin/course/videoList";
+		return "/admin/course/videoList";
 	}
 	
 	/**

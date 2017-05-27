@@ -45,7 +45,7 @@
 				<label for="memberRole" class="col-lg-3 control-label"> <span>*</span>视频缩略图：
 				</label>
 				<div class="col-lg-6">
-					<input type="file" required class="form-control" name="thumb"
+					<input type="file" required class="form-control" name="thumb" onchange="checkImgForm()"
 						id="thumb" placeholder="输入学校" title="请输入用户邮箱！">
 				</div>
 				<span class="info"></span>
@@ -55,7 +55,7 @@
 				<label for="memberRole" class="col-lg-3 control-label"> <span>*</span>视频文件：
 				</label>
 				<div class="col-lg-6">
-					<input type="file" required class="form-control" name="video"
+					<input type="file" required class="form-control" name="video" onchange="checkVideoForm()"
 						id="video" placeholder="输入视频文件" title="请提交视频文件">
 				</div>
 				<span class="info"></span>
