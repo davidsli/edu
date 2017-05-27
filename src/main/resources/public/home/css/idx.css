@@ -1,0 +1,339 @@
+		body {
+			background-color: #f3f5f7;
+		}
+	    body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+	    	font-family: "Microsoft YaHei", 微软雅黑, "宋体", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+	    	
+	    }
+		.navbar-form {
+			font-size: 14px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.input-group {
+			margin-top: 8px;
+			margin-bottom: 8px;
+			width: 185px;
+		}
+		.form-control {
+			background-color: transparent;
+			border-width: 0;
+
+		}
+		.input-group-addon {
+			background-color: transparent;
+			border-width: 0;
+			color: #9d9d9d;
+		}
+		.glyphicon:before {
+			padding-right: 5px;
+		}
+		.divider {
+			padding-left: 3px;
+			padding-right: 3px;
+		}
+
+		.user-pic img {
+			width: 20px;
+			height: 20px;
+		}
+		.userExit {
+			display: none;
+		}
+		#menu {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		#course-nav {
+			top: 50px;
+			position: absolute;
+			width: 224px;
+			z-index: 2;
+			background-color: rgba(0,0,0,.2);
+			border: none;
+			font-size: 15px;
+			text-align: center;
+		}
+		#course-nav li a {
+			color: #fff;
+			border-radius: 0;
+			padding: 11.3px 15px;	
+		}
+		#course-nav li a:link {
+			background-color: transparent;
+		}
+		#course-nav li a:hover {
+			background-color: rgba(0,0,0,.4);
+		}
+		#myCarousel {
+			top: 50px;
+			z-index: 1;
+		}
+		.carousel-control.right {
+			background-image: none;
+		}
+		.carousel-control.left {
+			position: absolute;
+			left: 224px;
+			background-image: none;
+		}
+		.carousel-indicators {
+			padding-left: 180px;
+		}
+		.col-sm-1-5 {
+			width: 20%;
+			float: left;
+		}
+		.col-sm-4-5 {
+			width: 80%;
+			float: left;
+		}
+
+		.col-sm-1-5 a {
+			margin-right: 12px; 
+			text-decoration: none;
+			height: 200px; 
+			color: rgb(153,153,153);
+			display: inline-block;
+			background-color: #fff;
+		}
+		.module-brand {
+			line-height: 24px;
+			font-size: 16px;
+			margin-left: -15px;
+			padding-bottom: 8px;
+			margin-top: 20px;
+			color: #111;	
+		}
+		#rec-course {
+			margin-top: 60px;
+		}
+		.module-brand a {	
+			color: #111;
+			text-decoration: none;
+		}
+		.col-title {
+			font-size: 13px;
+			color: #000;
+		}
+		.course-total {
+			color: rgb(85,185,41);
+		}
+		.col-content {
+			font-size: 12px;
+			padding: 12px 10px;
+		}
+		.course-sch {
+			padding-top: 6px;
+		}
+		
+		#compList, #engList, #ecoList, #humList, #phiList, #ideList, #course-gaokao {
+			padding-left: 0;
+		}
+		.row{
+			margin-bottom: 12px;
+		}
+		#course-gaokao {
+			margin-bottom: 82px;
+		}
+		.col-sm-first a {
+			height: 362px;
+			background-color: #fff;
+		}
+		.col-sm-first a:hover {
+			box-shadow: 5px 5px 10px #ccc;
+		}
+		.col-sm-3 {			
+			padding-right: 0;
+			margin-bottom: 12px;
+		}
+		.col-sm-3 a {
+			display: inline-block;
+			text-decoration: none;
+			height: 175px;
+			color: rgb(153,153,153);
+			background-color: #fff;
+		}
+		.col-sm-3 a:hover {
+			box-shadow: 5px 5px 10px #ccc;
+		}
+		.total{
+			line-height: 24px;
+			font-size: 12px;
+			margin-right: -20px;
+		}
+		.col-course-code {
+			font-size: 13px;
+		}
+		.footer nav{
+			padding-left: 25%;
+			border: none;
+			margin-bottom: 0;
+		}
+
+		#loginOrReg .modal-dialog {
+			width: 360px;
+			
+		}
+		#loginOrReg .modal-header {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+		#loginOrReg .modal-content {
+			background-image: url("../image/1.jpg");
+			opacity: .9;
+		}
+		#loginOrReg .glyphicon {
+			color: #fff;
+		}
+
+		#loginOrReg ul {
+			padding-left: 0;
+		}
+		#loginOrReg ul li {
+			display: inline-block;
+			list-style: none;
+			font-size: 16px;
+		}
+
+		#loginOrReg ul li a {
+			color: white;
+			text-decoration: none;
+			padding-left: 40px;
+			padding-right: 40px;
+			/*padding-right: 60px;*/
+		} 
+		#loginOrReg .form-control {
+			width: 260px;
+		}
+		#loginOrReg .modal-body {
+			padding: 15px 20px;
+		}
+		
+		#forget-psw {
+			padding-right: 15px;
+		}
+		.check {
+			color: #fff;
+			padding-left: 43px;
+		}
+		.check a {
+			color: #fff;
+		}
+		#loginButton {
+			width: 260px;
+			display: inline-block;
+			margin-left: 43px;
+			margin-top: 12px;
+		}
+		.close {
+			color: #fff;
+		}
+		.error {
+			color: #f3f5f7;
+			font-size: 10px;
+			font-weight: 100;
+		}
+		#gotoTop{
+			position: fixed;
+			top: 85%;
+			right: 1%;
+		}
+		#gotoTop .glyphicon-chevron-up {
+			color: #5cb85c;
+			font-size: 24px;
+		} 
+		#gotoTop .glyphicon-chevron-up:before {
+
+		}
+		#gotoTop.hover{background:#5CB542;color:#fff;text-decoration:none;}
+
+		@media (max-width: 767px) {
+    
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+    		#course-nav {
+    			font-size: 12px;
+    			width: 200px;
+    		}
+    		#course-nav li a {
+			 	padding: 8px 15px;	
+			}
+			.col-sm-1-5 a {
+				height: 150px;
+			}
+			.module-brand {
+				font-size: 15px;
+			}
+			.navbar-brand {
+				font-size: 16px;
+			}
+			.navbar-form{
+				font-size: 12px;
+			}
+			.input-group {
+				width: 165px;
+			}
+			.form-control {
+				font-size: 12px;
+			}
+			.total {
+				font-size: 11px;
+			}
+			.col-sm-first a {
+				height: 302px;
+			}
+			.col-sm-3 {
+				margin-bottom: 10px;
+			}
+			.col-sm-3 a {
+				height: 145px;
+			}
+			.col-content {
+				padding: 6px 10px;
+			}
+		}
+		@media (min-width: 1200px) {
+   			#course-nav {
+    			font-size: 15px;
+    			width: 265px;
+    		}
+    		#course-nav li a {
+			 	padding: 16px 15px;	
+			}
+			.col-sm-1-5 a {
+				height: 210px;
+			}
+			.col-title {
+				font-size: 14px;
+			}
+			.col-content {
+				font-size: 13px;
+			}
+			.module-brand {
+				font-size: 17px;
+			}
+			.navbar-brand {
+				font-size: 20px;
+			}
+			.navbar-form{
+				font-size: 14px;
+			}
+			.input-group {
+				width: 200px;
+			}
+			.form-control {
+				font-size: 14px;
+			}
+			.col-sm-first a {
+				height: 429px;
+			}
+			.col-sm-3 {
+				margin-bottom: 15px;
+			}
+			.col-sm-3 a {
+				height: 207px;
+			}
+			
+		}
+

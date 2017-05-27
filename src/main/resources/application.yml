@@ -37,12 +37,12 @@ flyway:
   enabled: true
   baselineOnMigrate: true
     
-security:
-  user:
-    password:
-      linna
-    name: linna
-  sessions: ALWAYS
+#security:
+#  user:
+#    password:
+#     admin
+#   name: admin
+# sessions: ALWAYS
   
   
   

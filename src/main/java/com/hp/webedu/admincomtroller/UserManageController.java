@@ -1,6 +1,7 @@
 package com.hp.webedu.admincomtroller;
 
 import java.security.Principal;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -34,6 +35,17 @@ public class UserManageController {
 	
 	@Resource
 	private UserService userService;
+	
+	//删除评论
+	@ResponseBody
+	@RequestMapping("/delete")
+	public String deleteCourse(String id) throws SQLException
+	{
+		JSONObject json=new JSONObject();
+		int i=userService.deleteUser(id);
+		json.put("success", true);
+		return json.toJSONString();
+	}
 	
 	//项目成员列表页面
 	@RequestMapping("/listData")

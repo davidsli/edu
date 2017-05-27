@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+
+<div class="md-content">
+	<div class="modal-header">
+		<h4 class="modal-title">
+			<strong id="addItemStoneTitle">添加视频</strong>
+		</h4>
+	</div>
+	<div class="modal-body">
+		<form role="form" action="/edu/admin/apk/add" id="addCourse" class="form-horizontal" method="post" enctype="multipart/form-data" onsubmit="checkApkForm()">
+			
+			<div class="form-group">
+				<label for="newVersionName" class="col-lg-3 control-label"><span>*</span>新版本名称：</label>
+				<div class="col-lg-6">
+					<input type="text" required class="form-control"
+						name="newVersionName" id="newVersionName" placeholder="输入版本名称"
+						title="" maxlength="99">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group">
+				<label for="newVersionCode" class="col-lg-3 control-label"><span>*</span>版本号：</label>
+				<div class="col-lg-6">
+					<input type="text" required class="form-control"
+						name="newVersionCode" id="newVersionCode" placeholder="输入版本号"
+						title="" maxlength="99">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="form-group">
+				<label for="updateDesc" class="col-lg-3 control-label"><span>*</span>版本描述：</label>
+				<div class="col-lg-6">
+					<input type="text" required class="form-control"
+						name="updateDesc" id="updateDesc" placeholder="输入版本描述"
+						title="" maxlength="99">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<!-- <div class="form-group">
+				<label for="videoName" class="col-lg-3 control-label"><span>*</span>是否强制更新：</label>
+				<div class="col-lg-6">
+					<input type="radio" required class="form-control"
+						name="videoName" id="isForced" checked="checked" value="true"> 是
+					<input type="radio" required class="form-control"
+						name="videoName" id="isForced" value="false">否
+				</div>
+				<span class="info"></span>
+			</div> -->
+			
+			
+			<div class="form-group">
+				<label for="apkFile" class="col-lg-3 control-label"> <span>*</span>apk：
+				</label>
+				<div class="col-lg-6">
+					<input type="file" required class="form-control" name="apkFile" onchange="checkApkForm()"
+						id="apkFile" placeholder="输入apk文件" title="请提交apk文件">
+				</div>
+				<span class="info"></span>
+			</div>
+			
+			<div class="modal-footer">
+				<button type="submit">提交</button>
+			</div>
+		</form>
+	</div>
+	
+	
+</div>
+
+<script type="text/javascript" src="apk/js/uploadApk.js"></script>
+<!-- <script src="js/jquery-1.4.2.min.js"></script> -->
+
+
+
+
+

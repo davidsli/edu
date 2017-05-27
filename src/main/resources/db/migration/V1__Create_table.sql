@@ -181,6 +181,9 @@ INSERT INTO t_subject(id,sub_name,state) VALUES ('297e386a56410ddd0156411a94c500
 INSERT INTO t_subject(id,sub_name,state) VALUES ('297e386a56410ddd0156411a94c50004', '工科', 1);
 INSERT INTO t_subject(id,sub_name,state) VALUES ('297e386a56410ddd0156411a94c50005', '计算机', 1);
 INSERT INTO t_subject(id,sub_name,state) VALUES ('297e386a56410ddd0156411a94c50006', '思政', 1);
+INSERT INTO t_subject(id,sub_name,state) VALUES ('297e386a56410ddd0156411a94c50007', '理科', 1);
+INSERT INTO t_subject(id,sub_name,state) VALUES ('297e386a56410ddd0156411a94c50008', '其他', 1);
+
 INSERT INTO `t_user` VALUES ('297e386a56410ddd0156411a94c50020', 'xhw', '肖华文', '', '11111111111', 1, '1370755152', 1, 1, '123456', 'fdhfdg', 'sadfs', 1);
-INSERT INTO `t_user` VALUES ('297e386a56410ddd0156411a94c50021', 'hepan', '何攀', '23261775@163.com', '13257499906', 1, '1370755152', 1, 1, '123456', 'wretwret', 'ewrtew˿', 1);
+INSERT INTO `t_user` VALUES ('297e386a56410ddd0156411a94c50021', 'hepan', '何攀', '13257499906@163.com', '13257499906', 1, '1370755152', 1, 1, '123456', 'wretwret', 'ewrtew˿', 1);
 INSERT INTO `t_user` VALUES ('297e386a56410ddd0156411a94c50022', 'user', 'user', '1253421@163.com', '14231443215', 1, '42134', 1, 1, '123456', '1114325432', 'ewrtew ', 1);

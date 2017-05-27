@@ -8,7 +8,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.hp.webedu.dao.VideoDao;
 import com.hp.webedu.entity.Course;
@@ -17,8 +19,29 @@ import com.hp.webedu.entity.Video;
 
 @Service
 public class VideoService {
+	
 	@Resource
 	private VideoDao videoDao;
+	
+	//android
+	public List<Object[]> getVideoListByDesc(String courseId) {
+		return videoDao.getVideoListByDesc(courseId,true);
+	}
+	//android
+	public Object getCourseScore(String courseId) {
+		return videoDao.getCourseScore( courseId);
+	}
+	//android
+	public Object getCourseScore(String courseId, String userID) {
+		return videoDao.getCourseScore( courseId,userID);
+	}
+	
+	@Modifying
+	@Transactional
+	public int deleteVideo(String id) {
+		return videoDao.deleteVideo( id);
+	}
+
 	
 	public Video getVideoById(String videoId) {
 		return videoDao.findOne(videoId);
@@ -57,5 +80,4 @@ public class VideoService {
 	public void saveVideo(Video video) {
 		videoDao.save(video);
 	}
-
 }

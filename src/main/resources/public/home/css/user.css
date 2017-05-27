@@ -1,0 +1,177 @@
+
+	 body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+    	font-family: "Microsoft YaHei", 微软雅黑, "宋体", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;	
+    }
+	.user-pic {
+		width: 20px;
+		height: 20px;
+	}
+	header .navbar-form {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	header .input-group {
+		margin-top: 8px;
+		margin-bottom: 8px;
+
+	}
+	header .form-control {
+		background-color: transparent;
+		border-width: 0;
+	}
+	header .input-group-addon {
+		background-color: transparent;
+		border-width: 0;
+	}
+	header .glyphicon-search {
+		color: #fff;
+	}
+	header .navbar-inverse {
+		border-width: 0;
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+	header .container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+
+	}
+	header .navbar-right {
+		margin-right: 0;
+	}
+	#content {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	#content .col-sm-3 {
+		background-color: rgb(245,245,245);
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.user-img-name {
+		list-style: none;
+		padding-left: 0;
+		text-align: center;
+		padding-top: 45px;
+	}
+	.user-img-name img {
+		width: 75px;
+		height: 75px;
+	}
+	.user-img-name .userName {
+		font-size: 16px;
+		line-height: 32px;
+		font-weight: bold;
+	}
+	#myTab {
+		padding-bottom: 45px;
+	}
+	#myTab > li > a {
+		background-color: transparent;
+		color: #759FBD;
+		font-size: 16px;
+		line-height: 36px;
+	}
+	#myTab > li.active > a {
+		background-color: #759FBD;
+		color: #fff;
+	}
+	#myTab {
+		text-align: center;
+	}
+	#content .col-sm-9 {
+		padding-top: 15px;
+	}
+	.smailTitle {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ddd;
+	}
+	.smailTitle span {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 36px;
+
+	}
+	
+	.userContent {
+		width: 100%;
+		padding-left: 15px;
+	}
+	.userItem {
+		
+		font-size: 16px;
+		margin-top: 15px;
+	}
+	.userItemTitle {
+		width: 25%;
+		font-weight: bold;
+		line-height: 36px;
+		padding: 12px;
+		background-color: #eee;
+		text-align: center;
+
+	}
+	.userItemCnt {
+		width: 75%;
+		line-height: 36px;
+		padding: 12px;
+		border-bottom: 1px solid #eee;
+	}
+	.modal-dialog {
+		width: 540px;
+	}
+	.modal {
+		top: 18%;
+		left: 10%;
+	}
+	.icons {
+		height: 48px;
+		padding: 0 30px 30px 30px;
+	}
+	.icon {
+		font-size: 48px;
+		color: #eee;
+	}
+	.actionItem {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #eee;
+	}
+	.Cnt {
+		font-size: 16px;
+		
+	}
+	.ps {
+		color: grey;
+		font-size: 17px;
+	}
+	#modifyEmail .glyphicon-lock, #modifyEmail3 .glyphicon-ok{
+		font-size: 36px;
+		color: #ddd;
+		padding-left: 20%;
+	}
+	#modifyEmail p {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.modal #top {
+		padding-left: 30%;
+	}
+	.item {
+		padding: 15px;
+	}
+	.item-div {
+		margin-bottom: 15px;
+	}
+	.item-div:hover {
+		background-color: #dfdfdf;
+	}
+	.video-pic {
+		float: left;
+		padding-right: 8px;
+		display: block;
+	}
+	.video-txt {
+		padding-top: 8px;
+	}

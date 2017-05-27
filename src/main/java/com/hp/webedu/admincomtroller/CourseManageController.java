@@ -3,6 +3,7 @@ package com.hp.webedu.admincomtroller;
 import java.io.File;
 import java.io.IOException;
 import java.security.Principal;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -40,6 +41,19 @@ public class CourseManageController {
 	
 	@Resource
 	private SubjectService subjectService;
+	
+	//删除课程
+	@ResponseBody
+	@RequestMapping("/delete")
+	public String deleteCourse(String id) throws SQLException
+	{
+		JSONObject json=new JSONObject();
+		int i=courseService.deleteCourse(id);
+		json.put("success", true);
+		return json.toJSONString();
+	}
+		
+		
 	/**
 	 *  处理添加一门课程
 	 * @return

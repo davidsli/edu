@@ -76,7 +76,6 @@ public class CommentController {
 	{
 		//commentService
 		//查找计算机相关的课程，人气，视频，集数相关的信息
-	    String subId="297e386a56410ddd0156411a94c50005";//学科id
 	    String userId=(String) request.getSession().getAttribute("userId");
 	    String str = UUID.randomUUID().toString();
 	    String uuid=str.substring(0, 8) + str.substring(9, 13) + str.substring(14, 18) + str.substring(19, 23) + str.substring(24);

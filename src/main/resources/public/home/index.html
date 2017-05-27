@@ -1,449 +1,327 @@
-﻿<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="css/idx.css"> -->
+	<link rel="stylesheet" href="css/index.css"> 
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/messages_zh.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<style type="text/css">
+	.menu {
+	position:relative;
+	}
+	.menu imag{display:none;}
+	.menu:hover img{
+	display:block;
+	position: absolute;
+	position: absolute; left: 0px; top: 21px;
+	}
+	</style>
+	<script type="text/javascript">
+	function shouImg(){
+		$("#code2").css("display","block");
+		alert("ggggggggggf");
+	}
+	</script>
+	<title>主页</title>
 
-	<div class="wrap">
-		<div class="part04">
+<script type="text/javascript">
+	$(function(){
+		function gotoTop(min_height){
+			$("#gotoTop").on("click",function(){
+				$("html,body").animate({scrollTop:0},1000);
+			});
+			min_height ? min_height = min_height : min_height = 600;
+			$(window).scroll(function(){
+				var top = $(window).scrollTop();
 
-			<div class="tit02">
-				<h2 class="fbluel">
-					<a href="http://open.sina.com.cn/school/id_57/" target="_top">计算机</a>
-				</h2>
-				<div class="rt">
-					<span class="classNum lf">共<span class="fred">466</span>门课程
-						&nbsp;&nbsp; 共<span class="fred">1069</span>集
-					</span> <span class="more"><a
-						href="http://open.sina.com.cn/school/id_57/" target="_top">更多&gt;&gt;</a></span>
-				</div>
-			</div>
-			<div class="blk02 clearfix" id="compList">
-				
-				<div class="vido">
-					<div class="pic">
-						<a target="_top" href="http://open.sina.com.cn/course/id_958"><img
-							title="TED:声音千变万化的我" alt="TED:声音千变万化的我"
-							data-src="http://www.sinaimg.cn/edu/157/2013/1218/U9906P352T157D958F5318DT20131218163558.jpg"
-							src="d.gif" data-top="1298" width="120" height="90"></a>
-					</div>
-					<p class="tit fbluel">
-						<a href="http://open.sina.com.cn/course/id_958" target="_top">TED:声音千变万化的我</a>
-					</p>
-					<p class="intro">
-						人气：<i>13,955</i>
-					</p>
-					<p class="intro">共1集，已全部翻译</p>
-				</div>
-				
-			</div>
-			
-			
-			
-			<div class="tit02">
-				<h2 class="fbluel">
-					<a href="http://open.sina.com.cn/discipline/id_9" target="_top">工科</a>
-				</h2>
-				<div class="rt">
-					<span class="classNum lf">共<span class="fred">28</span>门课程
-						&nbsp;&nbsp; 共<span class="fred">581</span>集
-					</span> <span class="more"><a
-						href="http://open.sina.com.cn/discipline/id_9" target="_top">更多&gt;&gt;</a></span>
-				</div>
-			</div>
-			<div class="blk02 clearfix" id="engList">
-				
-				<div class="vido">
-					<div class="pic">
-						<a target="_top" href="http://open.sina.com.cn/course/id_257"><img
-							title="麻省:创新与发明" alt="麻省:创新与发明"
-							data-src="http://www.sinaimg.cn/edu/157/2012/0223/U5525P352T157D257F5318DT20120223172312.jpg"
-							src="d.gif" data-top="4943" width="120" height="90"></a>
-					</div>
-					<p class="tit fbluel">
-						<a href="http://open.sina.com.cn/course/id_257" target="_top">麻省:创新与发明</a>
-					</p>
-					<p class="intro">
-						人气：<i>173,793</i>
-					</p>
-					<p class="intro">共14集，已全部翻译</p>
-				</div>
-			</div>
-			
-			<div class="tit02">
-				<h2 class="fbluel" style="width: 175px;">
-					<a href="http://open.sina.com.cn/discipline/id_3" target="_top">经济</a>
-				</h2>
-				<div class="rt" style="width: 725px;">
-					<span class="classNum lf">共<span class="fred">90</span>门课程
-						&nbsp;&nbsp; 共<span class="fred">760</span>集
-					</span> <span class="more"><a
-						href="http://open.sina.com.cn/discipline/id_3" target="_top">更多&gt;&gt;</a></span>
-				</div>
-			</div>
-			<div class="blk02 clearfix" id="ecoList">
-				
-				<div class="vido">
-					<div class="pic">
-						<a target="_top" href="http://open.sina.com.cn/course/id_96"><img
-							title="复旦:创业企业商业模式的设计与创新" alt="复旦:创业企业商业模式的设计与创新"
-							data-src="http://www.sinaimg.cn/edu/157/2011/0520/U5525P352T157D96F5318DT20110520141536.jpg"
-							src="d.gif" data-top="5423" width="120" height="90"></a>
-					</div>
-					<p class="tit fbluel">
-						<a href="http://open.sina.com.cn/course/id_96" target="_top">复旦:创业企业商业模式的设计与创新</a>
-					</p>
-					<p class="intro">
-						人气：<i>173,464</i>
-					</p>
-					<p class="intro">共5集，已翻译2集</p>
-				</div>
-			</div>
-			
-			<div class="tit02">
-				<h2 class="fbluel">
-					<a href="http://open.sina.com.cn/discipline/id_8" target="_top">人文</a>
-				</h2>
-				<div class="rt">
-					<span class="classNum lf">共<span class="fred">15</span>门课程
-						&nbsp;&nbsp; 共<span class="fred">227</span>集
-					</span> <span class="more"><a
-						href="http://open.sina.com.cn/discipline/id_8" target="_top">更多&gt;&gt;</a></span>
-				</div>
-			</div>
-			<div class="blk02 clearfix" id="humList">
-				<div class="vido">
-					<div class="pic">
-						<a target="_top" href="http://open.sina.com.cn/course/id_1208"><img
-							title="拉斯维加斯艺术学院:韩国美食" alt="拉斯维加斯艺术学院:韩国美食"
-							data-src="http://www.sinaimg.cn/edu/157/2015/0320/U9479P352T157D1208F5318DT20150320150154.jpg"
-							src="d.gif" data-top="5708" width="120" height="90"></a>
-					</div>
-					<p class="tit fbluel">
-						<a href="http://open.sina.com.cn/course/id_1208" target="_top">拉斯维加斯艺术学院:韩国美食</a>
-					</p>
-					<p class="intro">
-						人气：<i>51,686</i>
-					</p>
-					<p class="intro">共8集，已全部翻译</p>
-				</div>
-			</div>
-			
-			<div class="tit02">
-				<h2 class="fbluel">
-					<a href="http://open.sina.com.cn/discipline/id_8" target="_top">哲学</a>
-				</h2>
-				<div class="rt">
-					<span class="classNum lf">共<span class="fred">15</span>门课程
-						&nbsp;&nbsp; 共<span class="fred">227</span>集
-					</span> <span class="more"><a
-						href="http://open.sina.com.cn/discipline/id_8" target="_top">更多&gt;&gt;</a></span>
-				</div>
-			</div>
-			<div class="blk02 clearfix" id="phiList">
-				<div class="vido">
-					<div class="pic">
-						<a target="_top" href="http://open.sina.com.cn/course/id_1208"><img
-							title="拉斯维加斯艺术学院:韩国美食" alt="拉斯维加斯艺术学院:韩国美食"
-							data-src="http://www.sinaimg.cn/edu/157/2015/0320/U9479P352T157D1208F5318DT20150320150154.jpg"
-							src="d.gif" data-top="5708" width="120" height="90"></a>
-					</div>
-					<p class="tit fbluel">
-						<a href="http://open.sina.com.cn/course/id_1208" target="_top">拉斯维加斯艺术学院:韩国美食</a>
-					</p>
-					<p class="intro">
-						人气：<i>51,686</i>
-					</p>
-					<p class="intro">共8集，已全部翻译</p>
-				</div>
-				
-			</div>
-			
-			<div class="tit02">
-				<h2 class="fbluel">
-					<a href="http://open.sina.com.cn/discipline/id_8" target="_top">思政</a>
-				</h2>
-				<div class="rt">
-					<span class="classNum lf">共<span class="fred">15</span>门课程
-						&nbsp;&nbsp; 共<span class="fred">227</span>集
-					</span> <span class="more"><a
-						href="http://open.sina.com.cn/discipline/id_8" target="_top">更多&gt;&gt;</a></span>
-				</div>
-			</div>
-			<div class="blk02 clearfix" id="ideList">
-				<div class="vido">
-					<div class="pic">
-						<a target="_top" href="http://open.sina.com.cn/course/id_1208"><img
-							title="拉斯维加斯艺术学院:韩国美食" alt="拉斯维加斯艺术学院:韩国美食"
-							data-src="http://www.sinaimg.cn/edu/157/2015/0320/U9479P352T157D1208F5318DT20150320150154.jpg"
-							src="d.gif" data-top="5708" width="120" height="90"></a>
-					</div>
-					<p class="tit fbluel">
-						<a href="http://open.sina.com.cn/course/id_1208" target="_top">拉斯维加斯艺术学院:韩国美食</a>
-					</p>
-					<p class="intro">
-						人气：<i>51,686</i>
-					</p>
-					<p class="intro">共8集，已全部翻译</p>
-				</div>
-				
-			</div>
-			
+				if(top > min_height){
+					$("#gotoTop").fadeIn(100);
+				}else{
+					$("#gotoTop").fadeOut(200);
+				}
+			});
+		}
+		gotoTop();
 
-		</div>
-		
-		
-		<div class="part07">
-			<div class="tit04">
-				<h2 class="">
-					<span class="tt mxztc">名校直通车</span>
-				</h2>
-			</div>
-			<div class="cont">
-				<div class="blk05 clearfix">
-					<div class="pics">
+		$.validator.setDefaults({  
+			errorPlacement : function(error, element) {
+			    element.parent().after(error.css({"display":"block","paddingLeft":"43px"})) ; 
+			}   
+		});  
 
-						<div class="pic">
-							<a target="_top" href="http://www.yale.edu/"><img title=""
-								alt="耶鲁大学" src="img/u3835p42t228d185f7178dt20110318131258.jpg"
-								width="85" height="60" border="0"><span>耶鲁大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.harvard.edu/"><img title=""
-								alt="哈佛大学" src="u3835p42t228d184f7179dt20110318131240.jpg"
-								width="85" height="60" border="0"><span>哈佛大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.stanford.edu/"><img
-								title="" alt="斯坦福大学"
-								src="u3835p42t228d185f7177dt20110318131258.jpg" width="85"
-								height="60" border="0"><span>斯坦福大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.mit.edu/"><img title=""
-								alt="麻省理工学院" src="u3835p42t228d184f7183dt20110318131240.jpg"
-								width="85" height="60" border="0"><span>麻省理工学院</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.cam.ac.uk/"><img title=""
-								alt="剑桥大学" src="18.jpg" width="85" height="60" border="0"><span>剑桥大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.ox.ac.uk/"><img title=""
-								alt="牛津大学" src="u3835p42t228d184f7184dt20110318131240.jpg"
-								width="85" height="60" border="0"><span>牛津大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.princeton.edu/main/"><img
-								title="" alt="普林斯顿大学"
-								src="u3835p42t228d184f7185dt20110318131240.jpg" width="85"
-								height="60" border="0"><span>普林斯顿大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.berkeley.edu/"><img
-								title="" alt="加州大学伯克利分校"
-								src="u3835p42t228d184f7180dt20110318131240.jpg" width="85"
-								height="60" border="0"><span>加州大学伯克利分校</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.ucla.edu/"><img title=""
-								alt="加州大学洛杉矶分校" src="u3835p42t228d184f7181dt20110318131240.jpg"
-								width="85" height="60" border="0"><span>加州大学洛杉矶分校</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.columbia.edu/"><img
-								title="" alt="哥伦比亚大学"
-								src="u3835p42t228d184f7178dt20110318131240.jpg" width="85"
-								height="60" border="0"><span>哥伦比亚大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.upenn.edu/"><img title=""
-								alt="宾夕法尼亚大学" src="u3835p42t228d184f7177dt20110318131240.jpg"
-								width="85" height="60" border="0"><span>宾夕法尼亚大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.ted.com/"><img title=""
-								alt="TED官方网站" src="u3835p42t228d185f7179dt20110318135632.jpg"
-								width="85" height="60" border="0"><span>TED演讲</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top"
-								href="http://www.fdsm.fudan.edu.cn/Aboutus/index.aspx"><img
-								title="" alt="复旦大学管理学院" src="u5525p42dt20110524163541.jpg"
-								width="85" height="60" border="0"><span>复旦大学管理学院</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.oec.sjtu.edu.cn/"><img
-								title="" alt="上海交大海外教育学院" src="u5525p352dt20111020181244.jpg"
-								width="85" height="60" border="0"><span>上海交大海外教育学院</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top"
-								href="http://www.tsinghua.edu.cn/publish/th/index.html"><img
-								title="" alt="清华大学" src="u5525p352dt20111114164405.jpg"
-								width="85" height="60" border="0"><span>清华大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.pku.edu.cn/"><img title=""
-								alt="北京大学" src="u5525p352dt20111114160206.jpg" width="85"
-								height="60" border="0"><span>北京大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.ruc.edu.cn/"><img title=""
-								alt="中国人民大学" src="u5525p352dt20111114161632.jpg" width="85"
-								height="60" border="0"><span>中国人民大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.cnu.edu.cn/"><img title=""
-								alt="首都师范大学" src="u5525p352dt20111114161808.jpg" width="85"
-								height="60" border="0"><span>首都师范大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.bnu.edu.cn/"><img title=""
-								alt="北京师范大学" src="u5525p352dt20111114161957.jpg" width="85"
-								height="60" border="0"><span>北京师范大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.cass.net.cn/about/wygk.htm"><img
-								title="" alt="中国社会科学院" src="u5525p352dt20111114162223.jpg"
-								width="85" height="60" border="0"><span>中国社会科学院</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.nankai.edu.cn/"><img
-								title="" alt="南开大学" src="u5525p352dt20111114162358.jpg"
-								width="85" height="60" border="0"><span>南开大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.cuhk.edu.hk/english/"><img
-								title="" alt="香港中文大学" src="u5525p352dt20111114163017.jpg"
-								width="85" height="60" border="0"><span>香港中文大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.dlut.edu.cn/"><img title=""
-								alt="大连理工大学" src="u5525p352dt20111114163159.jpg" width="85"
-								height="60" border="0"><span>大连理工大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.ecnu.edu.cn/"><img title=""
-								alt="华东师范大学" src="u5525p352dt20111114163459.jpg" width="85"
-								height="60" border="0"><span>华东师范大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.scnu.edu.cn/scnu/"><img
-								title="" alt="华南师范大学" src="u5525p352dt20111114163627.jpg"
-								width="85" height="60" border="0"><span>华南师范大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.henu.edu.cn/"><img title=""
-								alt="河南大学" src="u5525p352dt20111114163824.jpg" width="85"
-								height="60" border="0"><span>河南大学</span></a>
-						</div>
-						<div class="pic">
-							<a target="_top" href="http://www.nwu.edu.cn/"><img title=""
-								alt="西北大学" src="u5525p352dt20111114164803.jpg" width="85"
-								height="60" border="0"><span>西北大学</span></a>
-						</div>
+		$('#loginForm').validate({
+			rules:{
+				email:{
+					required: true	
+				},
+				password: {
+					required: true,
+					minlength: 6,
+					maxlength: 12
+				}
+			}
+		});
+		$('#regForm').validate({
+			rules:{
+				email:{
+					required: true	
+				},
+				password: {
+					required: true,
+					minlength: 6,
+					maxlength: 12
+				},
+				confirm_password: {
+					required: true,
+					minlength: 6,
+					maxlength: 12,
+					equalTo: "#password"
+				}
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	
+	<header class="header">
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">视频教程</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right navbar-form">     
+					<li><a href="#" class="menu"><span class="glyphicon glyphicon-phone"></span>客户端<img id="code2" src="img/2code.png" width="50px" style="display:none" onmouseover="shouImg()"/></a></li>
+					<li>
+					    <div class="input-group">
+            				<a class="form-control" href="/edu/home/total?subjectId=1">搜索感兴趣的课程</a>
+           					<span class="input-group-addon btn"><span class="glyphicon glyphicon-search"></span></span>
+        				</div>
+					</li> 
+					<li class="userExit"><a href="/edu/home/setting" class="user-pic"><img src="img/user-pic.jpg" class="img-circle"><span id="userName">admin</span></a></li>
+					<li class="userExit"><a href="/edu/home/loginOut"><span class="glyphicon glyphicon-log-out"></span>退出</a></li>
+				</ul>	
+			</div>
+		</nav>		
+	</header>
+	<div class="modal fade" id="loginOrReg" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<ul id="myTab" class="nav nav-tabs">
+					    <li class="active"><a href="#loginTab" data-toggle="tab">用户登录</a></li>
+					    <li><a href="#regTab" data-toggle="tab">注册新用户</a></li>
+					</ul>
+				</div>
+				<div class="modal-body">
+					<div id="myTabContent" class="tab-content">
+					    <div class="tab-pane fade in active" id="loginTab">
+					        <form id="loginForm" action="" method="post" role="form">
+								<div class="input-group">	
+									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+									<input type="email" id="email" name="email" class="form-control" placeholder="请输入邮箱">
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									<input class="form-control" id="password" name="password" type="password" placeholder="请输入密码">
+								</div>
+								<div class="check">
+									<input id="remember-me" type="checkbox">记住我<a href="#" class="pull-right" id="forget-psw">忘记密码</a>
+								</div>
+								<input class="btn btn-default btn-info" id="loginButton" value="LOG IN" type="submit">
+							</form>
+					    </div>
+					    <div class="tab-pane fade" id="regTab">
+					        <form id="regForm" action="" method="post" role="form">
+								<div class="input-group">	
+									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+									<input type="email" id="email" name="email" class="form-control" placeholder="请输入邮箱">
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									<input type="password" id="password" name="password" class="form-control" placeholder="请输入密码">
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									<input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="请再次输入密码">
+								</div>
+								<div class="check">
+									<input type="checkbox" id="accept-terms">我已阅读并同意 <a href="#">用户协议</a>
+								</div>
+								
+								<input class="btn btn-default btn-info" id="loginButton" value="Register" type="submit">
+							</form>
+					    </div>
 					</div>
-
-				</div>
+				</div>				
 			</div>
-			<div class="part07 part08">
-				<div class="tit04">
-					<h2 class="">
-						<span class="tt hzjg">合作机构</span>
-					</h2>
-				</div>
-				<div class="cont">
-					<div class="blk06 clearface8ix">
-						<div class="pics">
-
-							<div class="pic">
-								<a target="_top" href="http://tlfsubs.eastgame.org/"> <img
-									title="" alt="TLF字幕组"
-									src="u3835p42t228d185f7181dt20110321165102.jpg" width="95"
-									height="50"> <span>TLF字幕组</span></a>
-							</div>
-							<div class="pic">
-								<a target="_top" href="#"> <img title="" alt="冰冰字幕组"
-									src="u3835p42t228d185f7183dt20110321165102.jpg" width="95"
-									height="50"> <span>冰冰字幕组</span></a>
-							</div>
-
-							<div class="pic">
-								<a target="_top" href="#"> <img title="" alt="时尚100网校"
-									src="u5525p42dt20110802190136.jpg" width="95" height="50">
-										<span>时尚100网校</span></a>
-							</div>
-							<div class="pic">
-								<a target="_top" href="http://openv.chaoxing.com/"> <img
-									title="" alt="超星" src="u5525p352dt20111114103144.jpg"
-									width="95" height="50"> <span>超星</span></a>
-							</div>
-							<div class="pic">
-								<a target="_top" href="http://107cine.com/"> <img title=""
-									alt="影视工业网" src="u6506p352dt20130116093015.jpg" width="95"
-									height="50"> <span>影视工业网</span></a>
-							</div>
-							<div class="pic">
-								<a target="_top" href="http://www.imooc.com/course/list?from=u4">
-									<img title="" alt="慕课网" src="u9906p352dt20141229110914.png"
-									width="95" height="50"> <span>慕课网</span>
-								</a>
-							</div>
-							<div class="pic">
-								<a target="_top" href="http://gkk.xsteach.com/"> <img
-									title="" alt="刑帅教育" src="u9906p352dt20150807172748.jpg"
-									width="95" height="50"> <span>刑帅教育</span></a>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="part_b2t">
-				<a href="#" target="_self" class="b2t" hidefocus="">back2Top</a>
-			</div>
-		</div>
-		<div class="footer"
-			style="padding: 15px; font-size: 12px; line-height: 20px; text-align: center;">
-			<a target="_top"
-				href="http://comment4.news.sina.com.cn/comment/skin/feedback.html">教育频道意见反馈留言板</a>
-			新浪电话：010-82628888—6738 欢迎批评指正<br><br> <a
-					href="http://corp.sina.com.cn/chn/">新浪简介</a> | <a
-					href="http://corp.sina.com.cn/eng/">About Sina</a> | <a
-					href="http://emarketing.sina.com.cn/">广告服务</a> | <a
-					href="http://www.sina.com.cn/contactus.html">联系我们</a> | <a
-					href="http://corp.sina.com.cn/chn/sina_job.html">招聘信息</a> | <a
-					href="http://www.sina.com.cn/intro/lawfirm.shtml">网站律师</a> | <a
-					href="http://english.sina.com/">SINA English</a> | <a
-					href="http://members.sina.com.cn/apply/">会员注册</a> | <a
-					href="http://help.sina.com.cn/">产品答疑</a>
-					<p>
-						Copyright © 1996 - 2017 SINA Corporation, All Rights Reserved<br><br>新浪公司
-								<a target="_top"
-								href="http://corp.sina.com.cn/chn/copyright.html">版权所有</a>
-					</p> <br> 除非另有声明，本平台所有视频作品采用<a
-						href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">Creative
-							Commons知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议进行许可。</a> <br> <br>
 		</div>
 	</div>
+	<div class="modal fade" id="loginOrReg" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<ul class="switch">
+							<li><a href="#">用户登录</a></li>
+							<li><a href="#" style="color: #9d9d9d;">注册新用户</a></li>
+						</ul>
+					</div>
+					<div class="modal-body">
+						<form id="loginForm" action="" method="post" role="form">
+							<div class="input-group">	
+								<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+								<input type="email" id="email" name="email" class="form-control" placeholder="请输入邮箱">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								<input class="form-control" id="password" name="password" type="password" placeholder="请输入密码">
+							</div>
+							<div class="check">
+								<input id="remember-me" type="checkbox" checked="checked">记住我<a href="#" class="pull-right" id="forget-psw">忘记密码</a>
+							</div>
+							<input class="btn btn-default btn-info" id="loginButton" value="LOG IN" type="submit">
+						</form>
 
-	<script type="text/javascript">
-	//图片滚动加载
-	~function() {var d = document, w = this, b = document.body, h = document.documentElement, isIE6 = navigator.appVersion.indexOf("MSIE 6") != -1 ? true: false, p = [], eventFunc = function() {scrollLoader.scroll() }, bH = -1, timer, bT, bVH, iTotal = d.images.length; var sina = {$: function(objName) {if (d.getElementById) {return d.getElementById(objName) } else {return d.all[objName] } }, addEvent: function(obj, eventType, func) {if (obj.attachEvent) {obj.attachEvent("on" + eventType, func) } else {obj.addEventListener(eventType, func, false) } }, delEvent: function(obj, eventType, func) {if (obj.detachEvent) {obj.detachEvent("on" + eventType, func) } else {obj.removeEventListener(eventType, func, false) } }, absPosition: function(obj, parentObj) {var left = obj.offsetLeft; var top = obj.offsetTop; var tempObj = obj.offsetParent; try {while (tempObj != b && tempObj != d.documentElement && tempObj != parentObj && tempObj != null) {left += tempObj.offsetLeft; top += tempObj.offsetTop; tempObj = tempObj.offsetParent } } catch (e) {}; return {left: left, top: top } } }; var scrollLoader = {version: '1.1.0', status: "complete", mult: 2, init: function(ele) {var that = this, imgs, num = 0; if (ele && ele.getElementsByTagName) {imgs = ele.getElementsByTagName('img') } else {imgs = d.images }; for (var i = 0; i < imgs.length; i++) {if (imgs[i].getAttribute("data-src") && !imgs[i].__isSL) {if (imgs[i].offsetWidth == 0 && imgs[i].offsetHeight == 0) {imgs[i].__pObj = imgs[i].parentNode; while (imgs[i].__pObj.offsetWidth == 0 && imgs[i].__pObj.offsetHeight == 0) {imgs[i].__pObj = imgs[i].__pObj.parentNode } }; imgs[i].__isSL = true; p.push(imgs[i]); num++ } }; if (num > 0) {if (this.status != 'scrolling') {sina.addEvent(w, "scroll", eventFunc); this.status = "scrolling"; timer = setInterval(function() {that.timer() }, 200) }; this.scroll() } }, timer: function() {if (iTotal !== d.images.length) {iTotal = d.images.length; this.init() }; var vh = Math.min(h.clientHeight, b.clientHeight); var vt = (w.pageYOffset || b.scrollTop || h.scrollTop) - Math.round(vh * (this.mult - 1) / 2); var vb = vt + Math.round(vh * ((this.mult - 1) / 2 + 1)); if (bT !== vt || vb !== bVH) {this.scroll() } }, showImg: function(img) {if (img.getAttribute("data-src")) { img.removeAttribute("data-top"); img.__pObj = null; img.__isSL = null;img.src = img.getAttribute("data-src"); if(isIE6){return false;} } }, scroll: function() {if (this.status != "scrolling") {return }; var cache = 0; if (bH == d.body.scrollHeight) {cache = 1 } else {bH = d.body.scrollHeight }; var vh = Math.min(h.clientHeight, b.clientHeight); var vt = (w.pageYOffset || b.scrollTop || h.scrollTop) - Math.round(vh * (this.mult - 1) / 2); var vb = vt + Math.round(vh * ((this.mult - 1) / 2 + 1)); bT = vt; bVH = vb; var s = 0, posTop, obj; for (var i = 0; i < p.length; i++) {if (!p[i].getAttribute("data-src")) {continue }; s++; if (!cache) {if (p[i].offsetWidth == 0 && p[i].offsetHeight == 0) {p[i].__pObj = p[i].parentNode; if (!p[i].__pObj) {this.showImg(p[i]); continue }; while ( !! p[i].__pObj && p[i].__pObj.offsetWidth == 0 && p[i].__pObj.offsetHeight == 0) {p[i].__pObj = p[i].__pObj.parentNode } }; obj = p[i].__pObj || p[i]; posTop = sina.absPosition(obj, b).top; p[i].setAttribute("data-top", posTop) } else {posTop = p[i].getAttribute("data-top") } if (posTop >= vt && posTop <= vb) {this.showImg(p[i]) } }; if (s == 0) {this.status = "complete"; sina.delEvent(w, "scroll", eventFunc); clearInterval(timer) } } }; this.scrollLoader = scrollLoader }(); scrollLoader.init();
-</script>
+						<form id="regForm" action="" method="post" role="form" style="display:none;">
+							<div class="input-group">	
+								<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+								<input type="email" id="email" name="email" class="form-control" placeholder="请输入邮箱">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								<input type="password" id="password" name="password" class="form-control" placeholder="请输入密码">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								<input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="请再次输入密码">
+							</div>
+							<div class="check">
+								<input type="checkbox" id="accept-terms" checked="checked">我已阅读并同意 <a href="#">用户协议</a>
+							</div>
+							
+							<input class="btn btn-default btn-info" id="loginButton" value="Register" type="submit">
+						</form>
+					</div>
+					
+				</div>
+			</div>
+	</div>
+	<div class="container">
+		<div class="container-fluid" id="menu">
+			<nav class="navbar navbar-default" id="course-nav" role="navigation" >
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="/edu/home/total?subjectId=297e386a56410ddd0156411a94c50005" target="_blank"><span class="glyphicon glyphicon-book"></span>计算机</a></li>
+					<li><a href="/edu/home/total?subjectId=297e386a56410ddd0156411a94c50004" target="_blank"><span class="glyphicon glyphicon-credit-card"></span>工科</a></li>
+					<li><a href="/edu/home/total?subjectId=297e386a56410ddd0156411a94c50001" target="_blank"><span class="glyphicon glyphicon-tree-deciduous"></span>经济</a></li>
+					<li><a href="/edu/home/total?subjectId=297e386a56410ddd0156411a94c50002" target="_blank"><span class="glyphicon glyphicon-facetime-video"></span>人文</a></li>
+					<li><a href="/edu/home/total?subjectId=297e386a56410ddd0156411a94c50003" target="_blank"><span class="glyphicon glyphicon-leaf"></span>哲学</a></li>
+					<li><a href="/edu/home/total?subjectId=297e386a56410ddd0156411a94c50006" target="_blank"><span class="glyphicon glyphicon-wrench"></span>思政</a></li>
+					<li><a href="/edu/home/total?subjectId=297e386a56410ddd0156411a94c50007" target="_blank"><span class="glyphicon glyphicon-pencil"></span>理科</a></li>
+					<li><a href="/edu/home/total?subjectId=297e386a56410ddd0156411a94c50008" target="_blank"><span class="glyphicon glyphicon-paperclip"></span>其他</a></li>
+				</ul>
+			</nav>
+			<div class="carousel slide" id="myCarousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>		
+				</ol>	
+				<div class="carousel-inner">
+					<div class="item active" >
+					  <a href="/edu/home/detail/8a0283ce5bff6603015bff7690120009" target="_blank">
+						<img src="img/1.PNG" alt="" class="img-responsive">
+					  </a>
+					</div>
+					<div class="item">
+					  <a href="/edu/home/detail/8a0283ce5bff6603015bff72f1660006" target="_blank">
+						<img src="img/2.PNG" alt="" class="img-responsive">
+					  </a>
+					</div>
+					<div class="item">
+					  <a href="/edu/home/detail/8a0283ce5bff6603015bff70a2820004" target="_blank">
+						<img src="img/3.png" alt="" class="img-responsive">
+					  </a>
+					</div>
+					<div class="item">
+					  <a href="/edu/home/detail/8a0283ce5bff6603015bff6d51b60002" target="_blank">
+						<img src="img/4.png" alt="" class="img-responsive">
+					  </a>
+					</div>
+					<div class="item">
+					  <a href="/edu/home/detail/8a0283ce5bff6603015bff6a9e400000" target="_blank">
+						<img src="img/5.png" alt="" class="img-responsive">
+				      </a>
+					</div>
+				</div>
+				<a href="#myCarousel" class="carousel-control left" data-slide="prev" role="button"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a href="#myCarousel" class="carousel-control right" data-slide="next" role="button"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>		
+	    </div>
+	    
+	    <!-- 计算机 -->
+	    <div class="container-fluid" id="compList">
+	    	
+	    </div>
+	    <!-- 工科 -->
+	    <div class="container-fluid" id="engList">
+	    	
+	    </div>
+	    <!-- 经济 -->
+	    <div class="container-fluid" id="ecoList">
+	    	
+	    </div>
+	    <!-- 人文 -->
+	    <div class="container-fluid" id="humList">
+	    
+	    </div>
+	    <!-- 哲学 -->
+	    <div class="container-fluid" id="phiList">
+	    	
+	    </div>
+	    <!-- 思政-->
+	    <div class="container-fluid" id="ideList">
+	    	
+	    </div>
+	    <!-- 理科-->
+	    <div class="container-fluid" id="sciList">
+	    	
+	    </div>
+	    <!-- 其他-->
+	    <div class="container-fluid" id="othList">
+	    	
+	    </div>
+	    
+	    
+	</div>
+	<footer class="footer">
+		<nav class="navbar navbar-default navbar-inverse" role="navigation">
+		    <div class="container-fluid">
+		   		<div>
+		   		    <ul class="nav navbar-nav">
+		   		        <li><a href="#">关于我们</a></li>
+		   		        <li><a href="#">联系我们</a></li>
+		   		        <li><a href="#">帮助中心</a></li>
+		   		        <li><a href="#">内容招募</a></li>
+		   		        <li><a href="#">意见反馈</a></li>
+		   		        <li><a href="#">企业服务</a></li>
+		   		    </ul>
+		   		</div>
+		    </div>  
+		</nav>
+	</footer>  
+    <div id="gotoTop" style="display: none;"><img src="img/gotoTop.PNG"></div>
+</body>
 
-
-	
-
-	<!-- body code begin -->
-	<script type="text/javascript">
-(function(){
-    if(window.top !== window.self || window._thereIsNoRealTimeMessage){return};
-    var script = document.createElement('script');
-    script.setAttribute('charset', 'gb2312');
-    script.src = 'http://news.sina.com.cn/js/694/2012/0830/realtime.js?ver=1.5.1';
-    document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-
-	<!-- SSO_UPDATECOOKIE_START -->
-	<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
-	<!-- SSO_UPDATECOOKIE_END -->
-	<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

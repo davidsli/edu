@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/user.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+<!-- <style type="text/css">
+	 body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+    	font-family: "Microsoft YaHei", 微软雅黑, "宋体", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;	
+    }
+	.user-pic {
+		width: 20px;
+		height: 20px;
+	}
+	header .navbar-form {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	header .input-group {
+		margin-top: 8px;
+		margin-bottom: 8px;
+
+	}
+	header .form-control {
+		background-color: transparent;
+		border-width: 0;
+	}
+	header .input-group-addon {
+		background-color: transparent;
+		border-width: 0;
+	}
+	header .glyphicon-search {
+		color: #fff;
+	}
+	header .navbar-inverse {
+		border-width: 0;
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+	header .container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+
+	}
+	header .navbar-right {
+		margin-right: 0;
+	}
+	#content {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	#content .col-sm-3 {
+		background-color: rgb(245,245,245);
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.user-img-name {
+		list-style: none;
+		padding-left: 0;
+		text-align: center;
+		padding-top: 45px;
+	}
+	.user-img-name img {
+		width: 75px;
+		height: 75px;
+	}
+	.user-img-name .userName {
+		font-size: 16px;
+		line-height: 32px;
+		font-weight: bold;
+	}
+	#myTab {
+		padding-bottom: 45px;
+	}
+	#myTab > li > a {
+		background-color: transparent;
+		color: #759FBD;
+		font-size: 16px;
+		line-height: 36px;
+	}
+	#myTab > li.active > a {
+		background-color: #759FBD;
+		color: #fff;
+	}
+	#myTab {
+		text-align: center;
+	}
+	#content .col-sm-9 {
+		padding-top: 15px;
+	}
+	.smailTitle {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ddd;
+	}
+	.smailTitle span {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 36px;
+
+	}
+	
+	.userContent {
+		width: 100%;
+		padding-left: 15px;
+	}
+	.userItem {
+		
+		font-size: 16px;
+		margin-top: 15px;
+	}
+	.userItemTitle {
+		width: 25%;
+		font-weight: bold;
+		line-height: 36px;
+		padding: 12px;
+		background-color: #eee;
+		text-align: center;
+
+	}
+	.userItemCnt {
+		width: 75%;
+		line-height: 36px;
+		padding: 12px;
+		border-bottom: 1px solid #eee;
+	}
+	.modal-dialog {
+		width: 540px;
+	}
+	.modal {
+		top: 18%;
+		left: 10%;
+	}
+	.icons {
+		height: 48px;
+		padding: 0 30px 30px 30px;
+	}
+	.icon {
+		font-size: 48px;
+		color: #eee;
+	}
+	.actionItem {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #eee;
+	}
+	.Cnt {
+		font-size: 16px;
+		
+	}
+	.ps {
+		color: grey;
+		font-size: 17px;
+	}
+	#modifyEmail .glyphicon-lock, #modifyEmail3 .glyphicon-ok{
+		font-size: 36px;
+		color: #ddd;
+		padding-left: 20%;
+	}
+	#modifyEmail p {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.modal #top {
+		padding-left: 30%;
+	}
+	.item {
+		padding: 15px;
+	}
+	.item-div {
+		margin-bottom: 15px;
+	}
+	.item-div:hover {
+		background-color: #dfdfdf;
+	}
+	.video-pic {
+		float: left;
+		padding-right: 8px;
+		display: block;
+	}
+	.video-txt {
+		padding-top: 8px;
+	}
+</style> -->
+
+	<title>个人中心</title>
+</head>
+<body>
+	<header>
+		<div class="container-fluid" id="top">
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">视频教程</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right navbar-form">     
+					<li><a href="#"><span class="glyphicon glyphicon-phone"></span>客户端</a></li>
+					<li>
+						<div class="input-group">
+				            <a class="form-control" href="/edu/home/total?subjectId=1">搜索感兴趣的课程</a>
+				          	<span class="input-group-addon btn"><span class="glyphicon glyphicon-search"></span></span>
+				      	</div>
+					</li>					
+					<li>
+						<a href="#"><img src="img/user-pic.jpg" class="img-circle user-pic"><span id="userName">admin</span></a>
+					</li> 						
+				</ul>	
+			</nav>
+		</div>
+	</header>
+	<div class="container" id="content">
+		<div class="row">
+			<div class="col-sm-3">
+				<ul class="user-img-name">
+					<li><img src="img/user-pic.jpg" class="img-circle"></li>
+					<li class="userName">admin</li>
+				</ul>
+				<ul id="myTab" class="nav nav-stacked nav-pills">
+					
+				    <li class="active"><a onclick="personalInfo()" href="#userMessage" data-toggle="tab"><span class="glyphicon glyphicon-user">个人信息</a></li>
+				    <li><a onclick="courseManage()" data-toggle="tab"><span class="glyphicon glyphicon-book"></span>课程管理</a></li>
+				    <li><a onclick="accountBind()" data-toggle="tab"><span class="glyphicon glyphicon-lock"></span>账号绑定</a></li>
+				 
+				</ul>
+			</div>
+			
+			<!-- 页面相应的右办部分 -->
+			<div id="myTabContent" class="tab-content col-sm-9">
+		    	
+			</div>
+			<!-- end 页面相应的右办部分 -->
+			
+		</div>
+	</div>
+	<div class="modal fade" id="editUserMsg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-pencil"></span>编辑个人信息</h4>
+	            </div>
+	            <div class="modal-body">
+	            	<form class="form-horizontal" role="form">
+						<div class="form-group">
+					    	<label for="email" class="col-sm-3 control-label">邮箱：</label>
+					    	<div class="col-sm-9">
+					      		<input type="text" class="form-control" id="email" placeholder="">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="nickname" class="col-sm-3 control-label">昵称：</label>
+					    	<div class="col-sm-9">
+					      		<input type="text" class="form-control" id="nickname" placeholder="">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="sex" class="col-sm-3 control-label">性别：</label>
+					    	<div class="col-sm-9">
+					      		<input type="radio" id="male" value="male" checked>男
+					      		<input type="radio" id="female" value="female">女
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="school" class="col-sm-3 control-label">学校：</label>
+					    	<div class="col-sm-9">
+					    		<input type="text" class="form-control" id="school" placeholder="">
+					    
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="userMsg" class="col-sm-3 control-label">个性签名：</label>
+					    	<div class="col-sm-9">
+					      		<input type="text" class="form-control" id="userMsg" placeholder="">
+					    	</div>
+					  	</div>
+					  	
+					</form>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	                <button type="button" class="btn btn-primary">保存</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="modifyEmail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-pencil"></span>更改邮箱</h4>
+	            </div>
+	            <div class="modal-body">
+	            	<div id="top">
+	            		<span class="glyphicon glyphicon-lock"></span>
+	            		<p>请输入登录密码验证身份</p>
+	            		<p>239879826@qq.com</p>
+	            	</div>
+	            	
+	            	<form class="form-horizontal" role="form">
+						<div class="form-group">
+					    	<label for="password" class="col-sm-3 control-label">密码：</label>
+					    	<div class="col-sm-9">
+					      		<input type="password" class="form-control" id="password" placeholder="请输入密码">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="newpsw" class="col-sm-3 control-label">验证码：</label>
+					    	<div class="col-sm-5">
+					      		<input type="text" class="form-control" id="newpsw" placeholder="输入验证码">
+					    	</div>
+					    	<div class="col-sm-4"><img src="img/code.PNG"><span class="glyphicon glyphicon-refresh"></span></div>
+					  	</div>
+					</form>
+	            </div>
+	            <div class="modal-footer">
+	            	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modifyEmail2">确定</button>
+	                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="modifyEmail2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-pencil"></span>更改邮箱</h4>
+	            </div>
+	            <div class="modal-body">
+	            	<form class="form-horizontal" role="form">
+						<div class="form-group">
+					    	<label for="email" class="col-sm-3 control-label">邮箱地址：</label>
+					    	<div class="col-sm-9">
+					      		<input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+					    	</div>
+					  	</div>
+					</form>
+	            </div>
+	            <div class="modal-footer">
+	            	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modifyEmail3">确定</button>
+	                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="modifyEmail3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-pencil"></span>更改邮箱</h4>
+	            </div>
+	            <div class="modal-body">
+	            	<div id="top">
+	            		<span class="glyphicon glyphicon-ok"></span>
+	            		<p>邮箱绑定成功，但尚未验证</p>
+	            		<p>你可以通过239879826@qq.com登录网站</p>
+	            	</div>
+	            	
+	            	
+	            </div>
+	            <div class="modal-footer">
+	            	<button type="button" class="btn btn-primary">马上去验证</button>
+	                <button type="button" class="btn btn-default" data-dismiss="modal">暂不验证</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="bindPhone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-pencil"></span>绑定手机</h4>
+	            </div>
+	            <div class="modal-body">
+	            	<form class="form-horizontal" role="form">
+						<div class="form-group">
+					    	<label for="phone" class="col-sm-3 control-label">手机号码：</label>
+					    	<div class="col-sm-9">
+					      		<input type="text" class="form-control" id="phone" placeholder="输入手机号码">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="verifyCode" class="col-sm-3 control-label">输入新密码：</label>
+					    	<div class="col-sm-9">
+					      		<input type="text" class="form-control" id="verifyCode"><a href="#">获取验证码</a>
+					    	</div>
+					  	</div>
+					</form>
+	            </div>
+	            <div class="modal-footer">
+	            	<button type="button" class="btn btn-primary">确定</button>
+	                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>   
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="modifyPsw" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-pencil"></span>修改密码</h4>
+	            </div>
+	            <div class="modal-body">
+	            	<form class="form-horizontal" role="form">
+						<div class="form-group">
+					    	<label for="oldpsw" class="col-sm-3 control-label">输入原始密码：</label>
+					    	<div class="col-sm-9">
+					      		<input type="password" class="form-control" id="oldpsw" placeholder="输入密码">
+					      		<input type="hidden" class="form-control" id="oldpsw1">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="newpsw" class="col-sm-3 control-label">输入新密码：</label>
+					    	<div class="col-sm-9">
+					      		<input type="password" class="form-control" id="newpsw2" placeholder="输入密码">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="confirmpsw" class="col-sm-3 control-label">确认新密码：</label>
+					    	<div class="col-sm-9">
+					    		<input type="password" class="form-control" id="confirmpsw" placeholder="再次输入密码">
+					    
+					    	</div>
+					  	</div>
+					</form>
+	            </div>
+	            <div class="modal-footer">
+	            	<button type="button" class="btn btn-primary" onclick="updatePassword()">确定</button>
+	                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+</body>
+<script type="text/javascript" src="setting/js/user.js"></script>
+</html>

@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
-import com.google.gson.JsonObject;
+//import com.google.gson.JsonObject;
 import com.hp.webedu.service.CourseService;
 import com.hp.webedu.util.FileUrl;
 
@@ -39,6 +39,45 @@ public class CourseListController {
 	
 	@Resource
 	private CourseService courseService;
+	
+	/**
+	 * 其他
+	 * @return
+	 * @throws SQLException
+	 */
+	@ResponseBody
+	@RequestMapping("/getOthList")
+	public String getOthList() throws SQLException
+	{
+		//查找
+	    String subId="297e386a56410ddd0156411a94c50008";//学科id
+	    List<Object[]> comls=courseService.getAllKindsOfList(subId);
+		List compList=getDealResult(comls);
+		JSONObject json=new JSONObject();
+		json.put("othList", compList);
+		json.put("success", true);
+		return json.toJSONString();
+	}
+	
+	/**
+	 * 理科
+	 * @return
+	 * @throws SQLException
+	 */
+	@ResponseBody
+	@RequestMapping("/getSciList")
+	public String getSciList() throws SQLException
+	{
+		//查找
+	    String subId="297e386a56410ddd0156411a94c50007";//学科id
+	    List<Object[]> comls=courseService.getAllKindsOfList(subId);
+		List compList=getDealResult(comls);
+		JSONObject json=new JSONObject();
+		json.put("sciList", compList);
+		json.put("success", true);
+		return json.toJSONString();
+	}
+	
 	
 	/**
 	 * 思政
@@ -158,36 +197,36 @@ public class CourseListController {
 	@RequestMapping("/list1")
 	public String getCourseList(ModelMap model) throws SQLException
 	{
-		//查找计算机相关的课程，人气，视频，集数相关的信息
-	    String subId="297e386a56410ddd0156411a94c50005";//学科id
-//	    List<Object[]> comls=courseService.getAllKindsOfList(subId);
-//		List compList=getDealResult(comls);
-//		model.put("compList", compList);
-	    //工科
-	    subId="297e386a56410ddd0156411a94c50004";
-	    List<Object[]> engls=courseService.getAllKindsOfList(subId);
-		List engList=getDealResult(engls);
-		model.addAttribute("engList", engList);
-	    //经济
-	    subId="297e386a56410ddd0156411a94c50001";
-	    List<Object[]> ecomls=courseService.getAllKindsOfList(subId);
-		List ecomList=getDealResult(ecomls);
-		model.addAttribute("ecomList", ecomList);
-	    //人文
-	    subId="297e386a56410ddd0156411a94c50002";
-	    List<Object[]> humls=courseService.getAllKindsOfList(subId);
-		List humList=getDealResult(humls);
-		model.addAttribute("humList", humList);
-	    //哲学
-	    subId="297e386a56410ddd0156411a94c50003";
-	    List<Object[]> phils=courseService.getAllKindsOfList(subId);
-		List phiList=getDealResult(phils);
-		model.addAttribute("phiList", phiList);
-	    //思政
-	    subId="297e386a56410ddd0156411a94c50006";
-	    List<Object[]> idels=courseService.getAllKindsOfList(subId);
-		List ideList=getDealResult(idels);
-		model.addAttribute("ideList", ideList);
+//		//查找计算机相关的课程，人气，视频，集数相关的信息
+//	    String subId="297e386a56410ddd0156411a94c50005";//学科id
+////	    List<Object[]> comls=courseService.getAllKindsOfList(subId);
+////		List compList=getDealResult(comls);
+////		model.put("compList", compList);
+//	    //工科
+//	    subId="297e386a56410ddd0156411a94c50004";
+//	    List<Object[]> engls=courseService.getAllKindsOfList(subId);
+//		List engList=getDealResult(engls);
+//		model.addAttribute("engList", engList);
+//	    //经济
+//	    subId="297e386a56410ddd0156411a94c50001";
+//	    List<Object[]> ecomls=courseService.getAllKindsOfList(subId);
+//		List ecomList=getDealResult(ecomls);
+//		model.addAttribute("ecomList", ecomList);
+//	    //人文
+//	    subId="297e386a56410ddd0156411a94c50002";
+//	    List<Object[]> humls=courseService.getAllKindsOfList(subId);
+//		List humList=getDealResult(humls);
+//		model.addAttribute("humList", humList);
+//	    //哲学
+//	    subId="297e386a56410ddd0156411a94c50003";
+//	    List<Object[]> phils=courseService.getAllKindsOfList(subId);
+//		List phiList=getDealResult(phils);
+//		model.addAttribute("phiList", phiList);
+//	    //思政
+//	    subId="297e386a56410ddd0156411a94c50006";
+//	    List<Object[]> idels=courseService.getAllKindsOfList(subId);
+//		List ideList=getDealResult(idels);
+//		model.addAttribute("ideList", ideList);
 	    
 		return "/home/index";
 	}
@@ -200,7 +239,7 @@ public class CourseListController {
 			Map mp=new HashMap();
 			mp.put("id", obs[0]);
 			mp.put("courNmae", obs[1]);
-			mp.put("imgUrl", "/course/image?imgname="+obs[2].toString());
+			mp.put("imgUrl", "/edu/course/image?imgname="+obs[2].toString());
 			if(null!=obs[3]){
 				mp.put("score",obs[3].toString());//分数
 			}else{
@@ -211,6 +250,7 @@ public class CourseListController {
 			}else{
 				mp.put("episodes","0");
 			}
+			mp.put("school",obs[5].toString());//集数
 			ls1.add(mp);
 		}
 		return ls1;

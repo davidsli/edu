@@ -20,13 +20,8 @@ public class AdminService {
 	 * @param password
 	 * @return
 	 */
-	public Boolean findAdmin(String username, String password) {
-		List<Object[]> adminList=admainDao.findAdmin(username, password);
-		if(adminList.size()>0)
-		{
-			return true;
-		}
-		return false;
+	public List<Object[]> findAdmin(String username, String password) {
+		return admainDao.findAdmin(username, password);
 	}
 
 }

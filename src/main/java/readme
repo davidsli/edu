@@ -1,4 +1,1 @@
-1.¿ª·¢»·¾³µÄ´î½¨
-	ÉèÖÃÏàÓ¦µÄwindowsÏÂÃæµÄperferencesÏÂÃæÌí¼ÓinstallationsÌí¼ÓÏàÓ¦µÄÄ¿Â¼ÎÄ¼ş£¬user settingsÌí¼ÓÏàÓ¦µÄÓÃ»§ÉèÖÃ£¬¾ÍÊÇÊôĞÔÎÄ¼ş¡£
-2.Ïà¹ØµÄÊı¾İÁ¬½Ó³öÏÖµÄÎÊÌâ¼ì²éÏàÓ¦µÄÊı¾İ¿â¡£Ìí¼ÓÊı¾İ¿âÁ¬½ÓµÄÊ±ºòÒ»¶¨ÒªÖ¸Ã÷ÏàÓ¦µÄÊı¾İ¿âÁ¬½ÓÃû³Æ¡£
-3.
+update t_video set time_long=concat( CONCAT( cast(   floor(2+RAND( ) * (5 - 0)*1) as char ),'åˆ†é’Ÿ' ),CONCAT( cast(   floor(1+RAND( ) * (59 - 0)*1) as char ),'ç§’' )  ); 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/messages_zh.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<title>忘记密码</title>
+
+	<style type="text/css">
+		body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+			font-family: "Microsoft YaHei", 微软雅黑, "宋体", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;	
+		}
+		header {
+			font-family: "Microsoft YaHei", 微软雅黑;
+			height: 120px;
+			text-align: center;
+			background-color: #edf1f2;
+			font-size: 32px;
+			font-weight: bold;
+			line-height: 120px;
+		}
+		#content {
+			margin-top: 30px;
+		}
+		.title {
+			padding-top: 15px;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.ps {
+			color: grey;
+			font-size: 16px;
+		}
+		.input-group {
+			margin-top: 12px;
+			height: 35px;
+			width: 100%;
+		}
+		.btn-warning {
+			width: 100%;
+			margin-top: 12px;
+			height: 35px;
+		} 
+		#verifycode {
+			width: 40%;
+		}
+		#verifycode-img {
+			padding-left: 12px;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		视频教程	
+	</header>
+	<div id="content" class="container">
+		<div class="col-sm-offset-4 col-sm-4 clearfix">
+			<div>
+				<p class="title">忘记密码</p>
+				<p><span class="ps">通过注册邮箱找回密码</span><a href="#" class="pull-right">返回立即登录</a></p>
+			</div>
+			<form action="" method="post" role="form">
+				<div class="input-group">	
+					<input  type="text" id="forEmail" class="form-control" placeholder="请输入登录邮箱账号">
+				</div>
+				<input class="btn btn-default btn-warning" value="提交" onclick="submitEmail()">
+			</form>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="login/js/forgetpsw.js"></script>
+</html>
