@@ -29,7 +29,6 @@ import com.hp.webedu.util.FileUrl;
 @RequestMapping("/admin")
 public class ApkController {
 	
-	
 	//上传apk
 	@RequestMapping("/apk/add")
 	public String addApk(@RequestParam("apkFile") MultipartFile apkFile,String newVersionName,String newVersionCode,String updateDesc)
